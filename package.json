@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/potato4ka/CareCompare#readme",
   "devDependencies": {
+    "font-awesome": "^4.6.3",
     "gulp": "^3.9.1",
     "gulp-sass": "^2.3.1"
   }
