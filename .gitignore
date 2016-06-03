@@ -1,5 +1,5 @@
 node_modules/*
-app/css/*
+css
 .idea/*
 
 package.json
