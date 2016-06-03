@@ -47,39 +47,13 @@ img {
     display: block;
 }
 
+/* helpers */
 .clear:after {
     content:'';
     height: 0;
     clear: both;
     display: block;
 }
-
-.button {
-    cursor: pointer;
-    border: none;
-    color: $color-white;
-    border-radius: 18px;
-    padding: 2px 12px;
-    display: inline-block;
-    line-height: 32px;
-
-    &:hover {
-        text-decoration: none;
-    }
-
-    &--default {
-        background: $color-brand-green;
-
-        &:hover {
-            background: darken( $color-brand-green, 10% );
-        }
-
-        &:focus {
-            outline: none;
-        }
-    }
-}
-
 
 /*ul {
     @include list-clear(); 

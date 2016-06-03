@@ -1,6 +1,4 @@
 .header {
-    $logo-height: 60px;
-
     border-bottom: 1px solid $color-grey;
     padding: 15px;
 
@@ -46,9 +44,9 @@
         background: $color-brand-violet;
         color: $color-white;
         text-align: center;
-        width: 36px;
-        height: 36px;
-        line-height: 36px;
+        width: $button-height;
+        height: $button-height;
+        line-height: $button-height;
         border-radius: 50%;
 
         &:hover {
