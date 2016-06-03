@@ -1,6 +1,6 @@
 .header {
-    border-bottom: 1px solid $color-grey;
-    padding: 15px;
+    border-bottom: $border;
+    padding: $base-spacing-unit;
 
     &__logo {
         height: $logo-height;
@@ -87,6 +87,8 @@
     }
 
     &__nav-link {
+        text-decoration: none;
+        
         &.active {
             color: darken( $color-brand-violet, 10% );
         }

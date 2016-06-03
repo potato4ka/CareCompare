@@ -11,15 +11,23 @@
         text-decoration: none;
     }
 
+    &:focus {
+        outline: none;
+    }
+
     &--default {
+        background: $color-grey;
+
+        &:hover {
+            background: darken( $color-grey, 10% );
+        }
+    }
+
+    &--action {
         background: $color-brand-green;
 
         &:hover {
             background: darken( $color-brand-green, 10% );
-        }
-
-        &:focus {
-            outline: none;
         }
     }
 }

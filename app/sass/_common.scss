@@ -1,8 +1,17 @@
+html {
+    height: 100%;
+}
+
 body {
     margin: 0;
     color: $color-dark;
     font: 15px $font;
     background: $color-white;
+    display: flex;
+    min-height: 100%;
+    flex-direction: column;
+    min-width: 100%;
+    max-width: 100%;
 }
 
 * {
@@ -11,13 +20,15 @@ body {
 
 a {
     color: $color-brand-violet;
-    text-decoration: none;
-}
 
-a:focus,
-a:hover {
-    text-decoration: none;
-    color: darken( $color-brand-violet, 10% );
+    &:focus,
+    &:hover {
+        color: darken( $color-brand-violet, 10% );
+    }
+
+    &:hover {
+        text-decoration: none;
+    }
 }
 
 form,
@@ -33,28 +44,14 @@ textarea {
     vertical-align: middle;
     font: 100% $font, sans-serif;
     border: 1px solid $color-grey;
-}
 
-input:focus,
-select:focus,
-textarea:focus {
-    border: 1px solid $color-brand-violet;
-    outline: none;
+    &:focus {
+        border: 1px solid $color-brand-violet;
+        outline: none;
+    }
 }
 
 img {
     border: none;
     display: block;
 }
-
-/* helpers */
-.clear:after {
-    content:'';
-    height: 0;
-    clear: both;
-    display: block;
-}
-
-/*ul {
-    @include list-clear(); 
-}*/

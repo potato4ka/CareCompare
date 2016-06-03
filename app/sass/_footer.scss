@@ -1,6 +1,7 @@
 .footer {
-    padding: 20px;
+    padding: $base-spacing-unit;
     text-align: center;
+    border-top: $border;
 
     &__nav {
         @include list-clear();
@@ -9,7 +10,7 @@
 
     &__nav-item {
         display: inline-block;
-        border-right: 1px solid #000;
+        border-right: 1px solid $color-dark;
         padding: 0 20px;
 
         &:last-child {
@@ -19,13 +20,19 @@
 
     &__link {
         font-size: 14px;
+        text-decoration: none;
     }
 
     &__copyright {
         margin: 20px 0 0;
 
         a {
-            color: $color-dark;
+            color: inherit;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
         }
 
     }
