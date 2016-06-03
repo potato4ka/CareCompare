@@ -1,7 +1,67 @@
 .header {
     border-bottom: 1px solid $color-grey;
+    padding: 15px;
+
+    &__logo {
+        float: left;
+    }
+
+    &__tools {
+        float: right;
+    }
+
+    &__social {
+        @include list-clear(); 
+        float: left;
+        font-size: 22px;
+    }
+
+    &__social-item {
+        float: left;
+        padding-left: 4px;
+
+        &:first-child {
+            padding-left: 0;
+        }
+    }
+
+    &__social-link {
+        display: block;
+        background: $color-brand-violet;
+        color: $color-white;
+        text-align: center;
+        width: 36px;
+        height: 36px;
+        line-height: 36px;
+        border-radius: 50%;
+
+        &:hover {
+            color: $color-white;
+            background: darken( $color-brand-violet, 10% );
+        }
+    }
+
+    &__buttons {
+        float: left;
+        padding-left: 20px;
+    }
+
+    &__button {
+        float: left;
+        margin-left: 4px;
+
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+
+    &__nav {
+        @include list-clear();
+        text-align: center;
+    }
+
+    &__nav-item {
+        display: inline-block;
+    }
 }
 
-.logo {
-    float: right;
-}
