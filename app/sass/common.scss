@@ -46,3 +46,8 @@ img {
     border: none;
     display: block;
 }
+
+
+ul {
+    @include list-clear(); 
+}
