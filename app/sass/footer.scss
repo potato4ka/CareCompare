@@ -1,0 +1,31 @@
+.footer {
+    padding: 20px;
+    text-align: center;
+
+    &__nav {
+        @include list-clear();
+
+    }
+
+    &__nav-item {
+        display: inline-block;
+        border-right: 1px solid #000;
+        padding: 0 20px;
+
+        &:last-child {
+            border-right: none;
+        }
+    }
+
+    &__link {
+        font-size: 14px;
+    }
+
+    &__copyright {
+
+        a {
+            color: $color-dark;
+        }
+
+    }
+}
