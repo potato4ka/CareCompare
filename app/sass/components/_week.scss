@@ -1,0 +1,62 @@
+.week {
+    display: flex;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: $button-height - 8;
+    text-align: center;
+
+    &__list {
+        @include list-clear();
+        flex: 7;
+        display: flex;
+        padding: 1px 0;
+    }
+
+    &__item {
+        flex: 1;
+        border-right: 1px solid $color-white;
+    }
+
+    &__link {
+        display: block;
+        padding: 4px;
+        text-align: center;
+        text-decoration: none;
+        color: $color-white;
+        background: $color-grey;
+
+        .active & {
+            background: $color-brand-green;
+        }
+
+        &:hover {
+            color: $color-white;
+            background: $color-brand-green;
+        }
+    }
+
+    &__icon {
+        flex: 1;
+        padding: 4px;
+    }
+
+    &__icon-link {
+        $icon-size: 30px;
+        background: $color-grey;
+        display: inline-block;
+        width: $icon-size;
+        height: $icon-size;
+        border-radius: 50%;
+        line-height: $icon-size;
+        color: $color-white;
+
+        &:hover {
+            color: $color-white;
+            background: $color-brand-green;
+        }
+
+        .active & {
+            background: $color-brand-green;
+        }
+    }
+}

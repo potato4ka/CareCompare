@@ -34,11 +34,13 @@
     </div>
 </header>
 <div class="headline clear">
-    <div class="search">
+    <div class="headline__search">
         <form action="#">
-            <span class="search__icon"><i class="fa fa-map-marker"></i></span>
-            <input type="search" placeholder="Postcode or Area" class="search__input" />
-            <button class="search__button"><i class="fa fa-search"></i></button>
+            <div class="search">
+                <span class="search__icon"><i class="fa fa-map-marker"></i></span>
+                <input type="search" placeholder="Postcode or Area" class="search__input" />
+                <button class="search__button"><i class="fa fa-search"></i></button>
+            </div>
         </form>
     </div>
     <nav class="main-nav">
@@ -52,6 +54,37 @@
 <div class="container">
     <div class="visual">
         <img class="visual__img" src="img/visual.jpg" alt="visual"/>
+        <div class="visual__box">
+            <form action="#">
+                <span class="visual__icon"><i class="fa fa-search"></i></span>
+                <div class="visual__row search">
+                    <span class="search__icon"><i class="fa fa-map-marker"></i></span>
+                    <input type="search" placeholder="Postcode or Area" class="search__input" />
+                    <button class="search__button"><i class="fa fa-search"></i></button>
+                </div>
+                <div class="visual__row">
+                    <select class="visual__select">
+                        <option>Care type</option>
+                        <option>One type</option>
+                        <option>Other type</option>
+                    </select>
+                </div>
+                <div class="visual__row week">
+                    <ul class="week__list">
+                        <li class="week__item"><a href="#" class="week__link">S</a></li>
+                        <li class="week__item active"><a href="#" class="week__link">M</a></li>
+                        <li class="week__item"><a href="#" class="week__link">T</a></li>
+                        <li class="week__item"><a href="#" class="week__link">W</a></li>
+                        <li class="week__item active"><a href="#" class="week__link">T</a></li>
+                        <li class="week__item"><a href="#" class="week__link">F</a></li>
+                        <li class="week__item"><a href="#" class="week__link">S</a></li>
+                    </ul>
+                    <span class="week__icon">
+                        <a href="#" class="week__icon-link"><i class="fa fa-moon-o"></i></a>
+                    </span>
+                </div>
+            </form>
+        </div>
     </div>
     <div class="section-article">
         <h4 class="section-article__title">articles</h4>
