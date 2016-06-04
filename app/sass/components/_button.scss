@@ -2,10 +2,18 @@
     cursor: pointer;
     border: none;
     color: $color-white;
-    border-radius: $button-height/2;
     padding: 2px 12px;
     display: inline-block;
     line-height: $button-height - 4;
+
+    &--rounded {
+        border-radius: $button-height/2;
+    }
+
+    &--stretch {
+        display: block;
+        width: 100%;
+    }
 
     &:hover {
         text-decoration: none;
