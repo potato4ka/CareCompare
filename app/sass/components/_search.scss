@@ -1,0 +1,45 @@
+.search {
+    display: flex;
+    align-items: center;
+
+    .visual & {
+        padding-left: 6px;
+    }
+
+    &__icon {
+        font-size: 32px;
+        color: $color-brand-green;
+        line-height: $button-height;
+        padding-right: 12px;
+        display: block;
+    }
+
+    &__input {
+        line-height: $button-height - 6;
+        padding: 2px 5px;
+        flex: 1;
+
+        &:focus {
+            border-color: $color-brand-green;
+        }
+
+        .visual & {
+            border: none;
+        }
+    }
+
+    &__button {
+        line-height: $button-height;
+        border: none;
+        color: $color-white;
+        background: $color-brand-green;
+        padding: 0 5px;
+        text-align: center;
+        min-width: $button-height;
+        cursor: pointer;
+
+        &:hover {
+            background: darken( $color-brand-green, 10% );
+        }
+    }
+}

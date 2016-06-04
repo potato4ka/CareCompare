@@ -1,0 +1,53 @@
+.visual {
+    position: relative;
+    border-bottom: $border;
+
+    &__img {
+        display: block;
+        max-width: 100%;
+    }
+
+    &__box {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: $color-dark-opacity;
+        width: 35%;
+        padding: $large-spacing-unit;
+    }
+
+    &__icon {
+        $icon-size: 120px;
+        display: block;
+        text-align: center;
+        margin-bottom: 40px;
+
+        i{
+            width: $icon-size;
+            height: $icon-size;
+            line-height: $icon-size;
+            border-radius: 50%;
+            font-size: 60px;
+            background: $color-brand-green;
+            color: $color-white;
+        }
+    }
+
+    &__row {
+        @extend .clear;
+        margin-top: 20px;
+        background: $color-white;
+    }
+
+    &__select {
+        display: block;
+        width: 100%;
+        border: $border;
+        height: $button-height;
+        padding: 2px 6px;
+    }
+}
