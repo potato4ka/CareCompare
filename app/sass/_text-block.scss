@@ -9,5 +9,10 @@
 
     &__row {
         padding: $base-spacing-unit;
+
+        img {
+            margin: $base-spacing-unit;
+            max-width: 40%;
+        }
     }
 }
