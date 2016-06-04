@@ -1,4 +1,5 @@
 .visual {
+    $root: &;
     position: relative;
     border-bottom: $border;
 
@@ -18,6 +19,14 @@
         background: $color-dark-opacity;
         width: 35%;
         padding: $large-spacing-unit;
+
+         #{$root}--centered & {
+            top: 15%;
+            bottom: 15%;
+            left: 25%;
+            right: 25%;
+            width: auto;
+         }
     }
 
     &__icon {
@@ -41,6 +50,10 @@
         @extend .clear;
         margin-top: 20px;
         background: $color-white;
+
+        .grid__column {
+            padding: 0;
+        }
     }
 
     &__select {

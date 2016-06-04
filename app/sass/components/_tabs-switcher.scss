@@ -4,13 +4,17 @@
     display: flex;
     font-weight: bold;
     font-size: 18px;
-    line-height: $button-height - 8;
+    line-height: $button-height - 10;
     text-align: center;
     padding: 1px 0;
 
     &__item {
         flex: 1;
         border-right: 1px solid $color-white;
+
+        &:first-child {
+            border-left: 1px solid $color-white;
+        }
     }
 
     &__input {
