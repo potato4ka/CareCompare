@@ -4,14 +4,6 @@
     margin: 0 auto;
     padding: 20px 0;
 
-    &__title {
-        font-size: 20px;
-        margin: 0;
-        text-align: center;
-        text-transform: uppercase;
-        color: $color-brand-green;
-    }
-
     &__list {
         @include list-clear();
     }
