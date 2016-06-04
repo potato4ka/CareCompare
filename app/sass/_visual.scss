@@ -50,4 +50,44 @@
         height: $button-height;
         padding: 2px 6px;
     }
+
+    &__button {
+        border: 1px solid $color-white;
+        width: 100%;
+        display: block;
+        font-weight: bold;
+        font-size: 18px;
+    }
+}
+
+.week {
+    display: flex;
+
+    &__list {
+        flex: 8;
+    }
+
+    &__icon-link {
+        $icon-size: 30px;
+        background: $color-grey;
+        display: inline-block;
+        width: $icon-size;
+        height: $icon-size;
+        border-radius: 50%;
+        line-height: $icon-size;
+        color: $color-white;
+
+        &:hover {
+            color: $color-white;
+            background: $color-brand-green;
+        }
+
+        .active & {
+            background: $color-brand-green;
+        }
+    }
+
+    &__icon {
+        flex: 2;
+    }
 }

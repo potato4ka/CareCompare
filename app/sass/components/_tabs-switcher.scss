@@ -1,0 +1,37 @@
+.tabs-switcher {
+    $root: &;
+    @include list-clear();
+    display: flex;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: $button-height - 8;
+    text-align: center;
+    padding: 1px 0;
+
+    &__item {
+        flex: 1;
+        border-right: 1px solid $color-white;
+    }
+
+    &__input {
+        display: none;
+    }
+
+    &__label {
+        display: block;
+        padding: 4px;
+        text-align: center;
+        text-decoration: none;
+        color: $color-white;
+        background: $color-grey;
+        cursor: pointer;
+
+        #{$root}__input:checked + & {
+            background: $color-brand-green;
+        }
+
+        &:hover {
+            background: $color-brand-green;
+        }
+    }
+}
