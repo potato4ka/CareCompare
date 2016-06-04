@@ -70,18 +70,56 @@
                     </select>
                 </div>
                 <div class="visual__row week">
-                    <ul class="week__list">
-                        <li class="week__item"><a href="#" class="week__link">S</a></li>
-                        <li class="week__item active"><a href="#" class="week__link">M</a></li>
-                        <li class="week__item"><a href="#" class="week__link">T</a></li>
-                        <li class="week__item"><a href="#" class="week__link">W</a></li>
-                        <li class="week__item active"><a href="#" class="week__link">T</a></li>
-                        <li class="week__item"><a href="#" class="week__link">F</a></li>
-                        <li class="week__item"><a href="#" class="week__link">S</a></li>
+                    <ul class="tabs-switcher week__list">
+                        <li class="tabs-switcher__item">
+                            <input type="checkbox" id="week1" class="tabs-switcher__input" >
+                            <label class="tabs-switcher__label" for="week1">S</label>
+                        </li>
+                        <li class="tabs-switcher__item">
+                            <input type="checkbox" id="week2" class="tabs-switcher__input" >
+                            <label class="tabs-switcher__label" for="week2">M</label>
+                        </li>
+                        <li class="tabs-switcher__item">
+                            <input type="checkbox" id="week3" class="tabs-switcher__input" >
+                            <label class="tabs-switcher__label" for="week3">T</label>
+                        </li>
+                        <li class="tabs-switcher__item">
+                            <input type="checkbox" id="week4" class="tabs-switcher__input" >
+                            <label class="tabs-switcher__label" for="week4">W</label>
+                        </li>
+                        <li class="tabs-switcher__item">
+                            <input type="checkbox" id="week5" class="tabs-switcher__input" >
+                            <label class="tabs-switcher__label" for="week5">T</label>
+                        </li>
+                        <li class="tabs-switcher__item">
+                            <input type="checkbox" id="week6" class="tabs-switcher__input" >
+                            <label class="tabs-switcher__label" for="week6">F</label>
+                        </li>
+                        <li class="tabs-switcher__item">
+                            <input type="checkbox" id="week7" class="tabs-switcher__input" >
+                            <label class="tabs-switcher__label" for="week7">S</label>
+                        </li>
                     </ul>
-                    <span class="week__icon">
-                        <a href="#" class="week__icon-link"><i class="fa fa-moon-o"></i></a>
-                    </span>
+                    <div class="week__icon tabs-switcher">
+                        <div class="tabs-switcher__item">
+                            <input type="checkbox" id="week-icon" class="tabs-switcher__input" >
+                            <label class="tabs-switcher__label" for="week-icon">
+                                <i class="fa fa-moon-o"></i>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="visual__row">
+                    <ul class="tabs-switcher">
+                        <li class="tabs-switcher__item">
+                            <input type="radio" name="services-switcher" class="tabs-switcher__input" id="services-switcher1" checked />
+                            <label for="services-switcher1" class="tabs-switcher__label">With Vacancies</label>
+                        </li>
+                        <li class="tabs-switcher__item">
+                            <input type="radio" name="services-switcher" class="tabs-switcher__input" id="services-switcher2" />
+                            <label for="services-switcher2" class="tabs-switcher__label">All Services</label>
+                        </li>
+                    </ul>
                 </div>
             </form>
         </div>
