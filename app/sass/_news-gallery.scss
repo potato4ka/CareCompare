@@ -6,7 +6,7 @@
     &__prev,
     &__next {
         font-size: 60px;
-        color: $color-dark;
+        color: $color-brand-violet;
         position: absolute;
         top: 50%;
         line-height: 80px;
@@ -15,7 +15,7 @@
         text-align: center;
 
         &:hover {
-            color: darken( $color-dark, 10% );
+            color: darken( $color-brand-violet, 10% );
         }
     }
 
