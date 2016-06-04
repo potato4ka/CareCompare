@@ -66,5 +66,10 @@
         min-width: $button-height;
         display: inline-block;
         vertical-align: middle;
+        cursor: pointer;
+
+        &:hover {
+            background: darken( $color-brand-green, 10% );
+        }
     }
 }
