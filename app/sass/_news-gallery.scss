@@ -1,0 +1,29 @@
+.section-article {
+    width: 600px;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+
+    &__list {
+        @include list-clear();
+    }
+
+    &__item {
+        padding-top: 10px;
+
+        &:before {
+            content: '';
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border: 3px solid $color-grey;
+            border-radius: 50%;
+            margin-right: 12px;
+            vertical-align: bottom;
+        }
+    }
+    &__link {
+        text-decoration: none;
+        color: $color-dark;
+    }
+}
