@@ -1,3 +1,13 @@
 .text-block {
-    text-align: center;
+    padding: $base-spacing-unit;
+
+    &__title {
+        text-align: center;
+        color: $color-brand-green;
+        font-size: 18px;
+    }
+
+    &__row {
+        padding: $base-spacing-unit;
+    }
 }
