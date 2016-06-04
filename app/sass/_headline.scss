@@ -3,3 +3,68 @@
     background: $color-grey-light;
     border-bottom: $border;
 }
+
+.main-nav {
+    float: left;
+    font-family: $font-heading;
+    font-size: 18px;
+    line-height: $button-height;
+
+    &__list {
+        @include list-clear();
+    }
+
+    &__item {
+        display: inline-block;
+        padding-left: 8px;
+
+        &:first-child {
+            padding-left: 0;
+        }
+    }
+
+    &__link {
+        color: $color-dark;
+        text-decoration: none;
+
+        &:hover {
+            color: $color-brand-violet;
+        }
+    }
+}
+
+.search {
+    float: right;
+
+    &__icon {
+        font-size: 32px;
+        color: $color-brand-green;
+        line-height: $button-height;
+        vertical-align: middle;
+        display: inline-block;
+        padding-right: 6px;
+    }
+
+    &__input {
+        display: inline-block;
+        vertical-align: middle;
+        line-height: $button-height - 4;
+        padding: 2px 5px;
+
+        &:focus {
+            border-color: $color-brand-green;
+        }
+    }
+
+    &__button {
+        line-height: $button-height;
+        border: none;
+        color: $color-white;
+        background: $color-brand-green;
+        padding: 0 5px;
+        text-align: center;
+        min-width: $button-height;
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
