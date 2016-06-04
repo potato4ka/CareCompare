@@ -1,0 +1,35 @@
+.icons-nav {
+    $icon-size: 60px;
+    border-bottom: $border;
+    padding: $base-spacing-unit;
+    background: $color-grey-light;
+    text-align: center;
+
+    &__list {
+        @include list-clear();
+        display: flex;
+    }
+
+    &__item {
+        flex: 1;
+        padding: 0 $base-spacing-unit;
+    }
+
+    &__link {
+        color: $color-dark;
+        text-decoration: none;
+    }
+
+    &__icon {
+        width: $icon-size;
+        height: $icon-size;
+        line-height: $icon-size;
+        font-size: 40px;
+        display: block;
+        margin: 0 auto 10px;
+    }
+
+    &__text {
+
+    }
+}
