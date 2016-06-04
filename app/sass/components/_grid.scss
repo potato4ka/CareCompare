@@ -1,0 +1,12 @@
+.grid {
+    display: flex;
+
+    &__column {
+        flex: 1;
+        padding: $base-spacing-unit;
+    }
+    &__img {
+        display: block;
+        max-width: 100%;
+    }
+}

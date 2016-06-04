@@ -12,16 +12,6 @@
         color: $color-brand-green;
     }
 
-    &__wrapper {
-        display: flex;
-        align-items: center;
-        padding-top: 20px;
-    }
-
-    &__column {
-        flex: 1;
-    }
-
     &__list {
         @include list-clear();
     }
@@ -43,9 +33,5 @@
     &__link {
         text-decoration: none;
         color: $color-dark;
-    }
-    &__img {
-        display: block;
-        max-width: 100%;
     }
 }
