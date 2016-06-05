@@ -1,4 +1,10 @@
 .signup {
     width: 500px;
     margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+
+    &__title {
+        border-bottom: $border;
+    }
 }
