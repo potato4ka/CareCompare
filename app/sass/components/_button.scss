@@ -5,6 +5,8 @@
     padding: 2px 12px;
     display: inline-block;
     line-height: $button-height - 4;
+    text-decoration: none;
+    text-align: center;
 
     &--rounded {
         border-radius: $button-height/2;
@@ -17,6 +19,7 @@
 
     &:hover {
         text-decoration: none;
+        color: $color-white;
     }
 
     &:focus {
@@ -36,6 +39,14 @@
 
         &:hover {
             background: darken( $color-brand-green, 10% );
+        }
+    }
+
+    &--brand {
+        background: $color-brand-violet;
+
+        &:hover {
+            background: darken( $color-brand-violet, 10% );
         }
     }
 }
