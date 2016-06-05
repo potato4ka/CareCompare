@@ -1,5 +1,10 @@
 .grid {
     display: flex;
+    align-items: flex-start;
+
+    &--middle {
+        align-items: center;
+    }
 
     &__column {
         flex: 1;
