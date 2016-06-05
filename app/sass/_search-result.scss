@@ -10,9 +10,86 @@
     position: absolute;
     left: 0;
     top: 0;
+    overflow: hidden;
     bottom: 0;
     width: 25%;
     background: $color-white;
     border-right: $border;
+    padding-bottom: $button-height;
+
+    &__button {
+        bottom: 0;
+        left: 0;
+        position: absolute;
+    }
+
+    &__holder {
+        overflow: auto;
+        height: 100%;
+    }
+}
+
+.search-result {
+    &__text {
+        color: $color-white;
+        background: $color-brand-green;
+        padding: $base-spacing-unit;
+    }
+
+    &__item {
+        @extend .clear;
+        border-top: 2px solid $color-brand-violet;
+        padding: 5px;
+        font-size: 12px;
+
+        &:first-child {
+            border-top: none;
+        }
+    }
+
+    &__avatar {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    &__tools {
+        border-top: $border;
+        padding: 5px 5px 0;
+    }
+
+    &__check-row {
+        float: right;
+        padding: 4px 0 0 10px;
+    }
+
+    &__tools-list {
+        @include list-clear();
+        font-size: 18px;
+
+        li {
+            display: inline-block;
+            padding-left: 4px;
+
+            &:first-child {
+                padding-left: 0;
+            }
+        }
+    }
+
+    &__button {
+        @extend .button--stretch;
+        @extend .button--rounded;
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+}
+
+.map-check {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: $color-white;
     padding: $base-spacing-unit;
+    border: $border;
 }
