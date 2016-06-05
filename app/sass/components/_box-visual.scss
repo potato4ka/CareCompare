@@ -1,0 +1,26 @@
+.box-visual {
+    position: relative;
+    text-align: center;
+
+    &__img {
+        display: block;
+    }
+
+    &__wrapper {
+        display: flex;
+        position: absolute;
+        top: $large-spacing-unit;
+        bottom: $large-spacing-unit;
+        left: $large-spacing-unit;
+        right: $large-spacing-unit;
+        background: $color-dark-opacity;
+    }
+
+    &__title {
+        margin: auto;
+        color: $color-white;
+        font-weight: bold;
+        font-family: $font-heading;
+        font-size: 44px;
+    }
+}
