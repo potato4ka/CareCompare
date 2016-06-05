@@ -7,4 +7,22 @@
     &__title {
         border-bottom: $border;
     }
+
+    &__row {
+        padding-top: $base-spacing-unit;
+
+        label {
+            display: block;
+        }
+
+        input {
+            width: 80%;
+            text-align: center;
+            padding: 6px;
+        }
+
+        button {
+            width: 30%;
+        }
+    }
 }
