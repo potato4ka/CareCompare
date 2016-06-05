@@ -52,8 +52,30 @@
     </nav>
 </div>
 <div class="container">
-    
-    
+    <div class="map-box">
+        <div id="map"></div>
+        <script>
+          function initMap() {
+            var mapDiv = document.getElementById('map');
+            var map = new google.maps.Map(mapDiv, {
+              center: {lat: 44.540, lng: -78.546},
+              zoom: 8
+            });
+          }
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+            async defer></script>
+    </div>
+    <aside class="sidebar">
+        <a href="#" class="sidebar__button button button--action button--stretch">View Comparison</a>
+        <div class="sidebar__holder">
+            <div class="search-result__text">
+                <h2>Your search for Craches in Citywest returned 3 results</h2>
+                <p>The average cost for child care in Citywest is $30 euro per day</p>
+            </div>
+            <button class="button button--stretch button--brand">Refine Results</button>
+        </div>
+    </aside>
 </div>
 <footer class="footer clear">
     <ul class="footer__nav">
