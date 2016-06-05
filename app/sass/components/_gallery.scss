@@ -1,0 +1,45 @@
+.gallery {
+    &__list {
+        @include list-clear();
+    }
+
+    &__item {
+        display: none;
+
+        &.active {
+            display: block;
+        }
+    }
+
+    &__img {
+        display: block;
+        width: 100%;
+    }
+
+    &__dots {
+        @include list-clear();
+        padding-top: $base-spacing-unit;
+        text-align: center;
+    }
+
+    &__dot {
+        display: inline-block;
+    }
+
+    &__dot-link {
+        width: 12px;
+        height: 12px;
+        display: inline-block;
+        border: 2px solid $color-brand-violet;
+        border-radius: 50%;
+        margin-left: 2px;
+        cursor: pointer;
+        text-indent: -9999px;
+        overflow: hidden;
+
+        &:hover,
+        .active & {
+            background: $color-brand-violet;
+        }
+    }
+}
