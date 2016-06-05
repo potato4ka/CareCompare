@@ -26,3 +26,15 @@
     text-transform: uppercase;
     color: $color-brand-green;
 }
+
+.spacing {
+    padding: $base-spacing-unit 0;
+}
+
+.spacing-top {
+    padding-top: $base-spacing-unit;
+}
+
+.spacing-bottom {
+    padding-bottom: $base-spacing-unit;
+}
