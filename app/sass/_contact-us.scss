@@ -1,0 +1,30 @@
+.form__row {
+    label {
+        display: block;
+    }
+    .contact-form {
+        width: 90%;
+        position: relative;
+        margin: 0 auto;
+
+        i{
+            position: absolute;
+            top: 27%;
+            left: -15px;
+            width: 20px;
+            height: 20px;
+            padding-left: 30px;
+        }
+
+        input {
+            width: 100%;
+            padding: 6px 36px;
+        }
+    }
+    textarea {
+        width: 90%;
+        height: 172px;
+        margin: 0 auto;
+    }
+
+}

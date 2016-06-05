@@ -10,26 +10,24 @@
 
     &__row {
         padding: $base-spacing-unit;
-
-        img {
-            max-width: 100%;
-            display: block;
-
-            &.left,
-            &.right {
-                margin: $base-spacing-unit;
-                max-width: 40%;
-            }
-
-            &.left {
-                margin-left: 0;
-            }
-
-            &.right {
-                margin-right: 0;
-            }
-        }
-
     }
 
+    img {
+        max-width: 100%;
+        display: block;
+
+        &.left,
+        &.right {
+            margin: $base-spacing-unit;
+            max-width: 40%;
+        }
+
+        &.left {
+            margin-left: 0;
+        }
+
+        &.right {
+            margin-right: 0;
+        }
+    }
 }
