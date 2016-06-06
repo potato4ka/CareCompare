@@ -20,6 +20,7 @@
         width: 100%;
         display: block;
         line-height: $button-height - 6;
+        height: $button-height;
 
         #{$root}__icon + #{$root}__hold & {
             padding-left: 30px;
@@ -38,6 +39,7 @@
         color: $color-white;
         width: $button-height;
         text-align: center;
+        height: $button-height;
     }
 
     &__body {
