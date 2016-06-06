@@ -1,11 +1,11 @@
-.form__row {
-    label {
+.contact-form {
+    &__label {
         display: block;
+        padding-bottom: 5px;
     }
-    .contact-form {
-        width: 90%;
+
+    &__wrapper {
         position: relative;
-        margin: 0 auto;
 
         i{
             position: absolute;
@@ -15,16 +15,29 @@
             height: 20px;
             padding-left: 30px;
         }
-
-        input {
-            width: 100%;
-            padding: 6px 36px;
-        }
     }
-    textarea {
-        height: 172px;
+
+    &__area {
+        height: 182px;
         margin: 0 auto;
         padding: 6px 20px;
     }
 
+    &__input {
+        width: 100%;
+        padding: 6px 36px;
+    }
+
+    &__title {
+        border-bottom: $border;
+        margin: 0 0 10px;
+        padding-bottom: 5px;
+        text-align: center;
+        font-weight: normal;
+        font-size: 16px;
+    }
+
+    address {
+        font-style: normal;
+    }
 }
