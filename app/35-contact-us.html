@@ -62,40 +62,43 @@
         </div>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam efficitur venenatis arcu, id sodales lorem rhoncus sit amet. Quisque et massa quis metus elementum scelerisque. Fusce eget urna imperdiet, lacinia felis non, vulputate erat. Maecenas volutpat nulla mi, ac laoreet leo faucibus nec. Nulla vitae scelerisque sapien. In eu augue pharetra, tristique mi a, eleifend arcu. Donec suscipit urna eu arcu euismod rutrum. Aliquam sit amet tempor nibh. Vivamus porttitor metus ante, in pretium leo bibendum sed. Curabitur dictum nunc ut mi interdum pulvinar. Maecenas molestie quam nec tortor commodo, fermentum ullamcorper lorem pellentesque. Proin at sagittis nisi. Aliquam erat volutpat.</p>
         <form action="#">
-            <div class="grid">
+            <div class="grid contact-form">
                 <div class="grid__column center">
-                    <div class="form__row spacing-bottom">
-                        <label>Name</label>
-                        <div class="contact-form">
+                    <div class="spacing-bottom">
+                        <label class="contact-form__label">Name</label>
+                        <div class="contact-form__wrapper">
                             <i class="fa fa-user"></i>
-                            <input class="center" type="text" placeholder="Enter Name">
+                            <input class="center contact-form__input" type="text" placeholder="Enter Name">
                         </div>
                     </div>
-                    <div class="form__row spacing-bottom">
-                        <label>Email</label>
-                        <div class="contact-form">
+                    <div class="spacing-bottom">
+                        <label class="contact-form__label">Email</label>
+                        <div class="contact-form__wrapper">
                             <i class="fa fa-envelope"></i>
-                            <input class="center" type="email" placeholder="Enter Email">
+                            <input class="center contact-form__input" type="email" placeholder="Enter Email">
                         </div>
                     </div>
-                    <div class="form__row spacing-bottom">
-                        <label>Subject</label>
-                        <div class="contact-form">
+                    <div class="spacing-bottom">
+                        <label class="contact-form__label">Subject</label>
+                        <div class="contact-form__wrapper">
                             <i class="fa fa-pencil"></i>
-                            <input class="center" type="text" placeholder="Enter Subject">
+                            <input class="center contact-form__input" type="text" placeholder="Enter Subject">
                         </div>
                     </div>
                 </div>
                 <div class="grid__column center">
                     <div class="form__row spacing-bottom">
-                        <label>Message</label>
-                        <textarea></textarea>
+                        <label class="contact-form__label">Message</label>
+                        <textarea class="contact-form__area"></textarea>
+                    </div>
+                    <div class="form__row spacing-bottom">
+                        <button class=" button button--action">Send Message</button>
                     </div>
                 </div>
                 <div class="grid__column">
-                    <h5 class="center signup__title">Our Office</h5>
-                    <address>Address,City,Province,Postcode</address>
-                    <p>(**)000-000-00-00</p>
+                    <h3 class="contact-form__title">Our Office</h3>
+                    <address>Address, City, Province, Postcode</address>
+                    <p>tel.(**)000-000-00-00</p>
                     <p>
                         <a href="#">compare@mail.com</a>
                     </p>

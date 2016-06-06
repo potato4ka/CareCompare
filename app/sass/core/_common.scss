@@ -54,6 +54,8 @@ textarea {
 textarea {
     min-width: 100%;
     max-width: 100%;
+    overflow: auto;
+    resize: none;
 }
 
 button {
