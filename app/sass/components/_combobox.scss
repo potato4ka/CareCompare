@@ -1,0 +1,57 @@
+.combobox {
+    $root: &;
+
+    &__title {
+        @extend .clear;
+        position: relative;
+        line-height: $button-height;
+    }
+
+    &__icon {
+        color: $color-brand-violet;
+        line-height: $button-height;
+        position: absolute;
+        top: 0;
+        left: 8px;
+    }
+
+    &__input {
+        padding: 2px 8px;
+        width: 100%;
+        display: block;
+        line-height: $button-height - 6;
+
+        #{$root}__icon + #{$root}__hold & {
+            padding-left: 30px;
+        }
+    }
+
+    &__hold {
+        overflow: hidden;
+    }
+
+    &__arrow {
+        float: right;
+        background: $color-brand-violet;
+        padding: 0 5px;
+        line-height: $button-height;
+        color: $color-white;
+        width: $button-height;
+        text-align: center;
+    }
+
+    &__body {
+        border: $border;
+        border-top: none;
+    }
+
+    &__list {
+        @include list-clear();
+        padding-bottom: 4px;
+    }
+
+    &__item {
+        @extend .clear;
+        padding-top: 4px;
+    }
+}

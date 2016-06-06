@@ -250,36 +250,122 @@
                     </p>
                 </div>
                 <div class="grid spacing-top">
-                    <div class="combobox">
-                        <div class="combobox__title">
-                            <i class="combobox__icon fa fa-user-plus"></i>
-                            <input type="text" placeholder="Type of Care"/>
-                        </div>
-                        <div class="combobox__body">
-                            <ul class="combobox__list">
-                                <li class="combobox__item">
-                                    <input type="checkbox" class="combobox__check" id="combobox1">
-                                    <label class="combobox__label" for="combobox1"></label>
-                                </li>
-                                <li class="combobox__item">
-                                    <input type="checkbox" class="combobox__check" id="combobox2">
-                                    <label class="combobox__label" for="combobox2"></label>
-                                </li>
-                                <li class="combobox__item">
-                                    <input type="checkbox" class="combobox__check" id="combobox3">
-                                    <label class="combobox__label" for="combobox3"></label>
-                                </li>
-                                <li class="combobox__item">
-                                    <input type="checkbox" class="combobox__check" id="combobox4">
-                                    <label class="combobox__label" for="combobox4"></label>
-                                </li>
-                                <li class="combobox__item">
-                                    <input type="checkbox" class="combobox__check" id="combobox5">
-                                    <label class="combobox__label" for="combobox5"></label>
-                                </li>
-                            </ul>
+                    <div class="grid__column">
+                        <div class="combobox">
+                            <div class="combobox__title">
+                                <a href="#" class="combobox__arrow"><i class="fa fa-caret-down"></i></a>
+                                <i class="fa fa-user combobox__icon"></i>
+                                <div class="combobox__hold">
+                                    <input type="text" placeholder="Type of Care" class="combobox__input" />
+                                </div>
+                            </div>
+                            <div class="combobox__body">
+                                <ul class="combobox__list">
+                                    <li class="combobox__item">
+                                        <input type="checkbox" id="combobox1">
+                                        <label for="combobox1">Creche</label>
+                                    </li>
+                                    <li class="combobox__item">
+                                        <input type="checkbox" id="combobox2">
+                                        <label for="combobox2">Nanny</label>
+                                    </li>
+                                    <li class="combobox__item">
+                                        <input type="checkbox" id="combobox3">
+                                        <label for="combobox3">Childminder</label>
+                                    </li>
+                                    <li class="combobox__item">
+                                        <input type="checkbox" id="combobox4">
+                                        <label for="combobox4">Babysitter</label>
+                                    </li>
+                                    <li class="combobox__item">
+                                        <input type="checkbox" id="combobox5">
+                                        <label for="combobox5">Au Pair</label>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
+                    <div class="grid__column">
+                        <div class="combobox">
+                            <div class="combobox__title">
+                                <a href="#" class="combobox__arrow"><i class="fa fa-caret-down"></i></a>
+                                <div class="combobox__hold">
+                                    <input type="text" placeholder="Providers care for ages" class="combobox__input" />
+                                </div>
+                            </div>
+                            <div class="combobox__body">
+                                <ul class="combobox__list">
+                                    <li class="combobox__item">
+                                        <input type="checkbox" class="combobox__check" id="combobox1">
+                                        <label class="combobox__label" for="combobox1">0-12 month</label>
+                                    </li>
+                                    <li class="combobox__item">
+                                        <input type="checkbox" class="combobox__check" id="combobox2">
+                                        <label class="combobox__label" for="combobox2">1-2 years</label>
+                                    </li>
+                                    <li class="combobox__item">
+                                        <input type="checkbox" class="combobox__check" id="combobox3">
+                                        <label class="combobox__label" for="combobox3">2-3 years</label>
+                                    </li>
+                                    <li class="combobox__item">
+                                        <input type="checkbox" class="combobox__check" id="combobox4">
+                                        <label class="combobox__label" for="combobox4">3-5 years</label>
+                                    </li>
+                                    <li class="combobox__item">
+                                        <input type="checkbox" class="combobox__check" id="combobox5">
+                                        <label class="combobox__label" for="combobox5">5+ years</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear spacing-top">
+                    <p><i class="fa fa-clock-o"></i> Days required</p>
+                    <div class="week">
+                        <ul class="tabs-switcher week__list">
+                            <li class="tabs-switcher__item">
+                                <input type="checkbox" id="week1" class="tabs-switcher__input" >
+                                <label class="tabs-switcher__label" for="week1">S</label>
+                            </li>
+                            <li class="tabs-switcher__item">
+                                <input type="checkbox" id="week2" class="tabs-switcher__input" >
+                                <label class="tabs-switcher__label" for="week2">M</label>
+                            </li>
+                            <li class="tabs-switcher__item">
+                                <input type="checkbox" id="week3" class="tabs-switcher__input" >
+                                <label class="tabs-switcher__label" for="week3">T</label>
+                            </li>
+                            <li class="tabs-switcher__item">
+                                <input type="checkbox" id="week4" class="tabs-switcher__input" >
+                                <label class="tabs-switcher__label" for="week4">W</label>
+                            </li>
+                            <li class="tabs-switcher__item">
+                                <input type="checkbox" id="week5" class="tabs-switcher__input" >
+                                <label class="tabs-switcher__label" for="week5">T</label>
+                            </li>
+                            <li class="tabs-switcher__item">
+                                <input type="checkbox" id="week6" class="tabs-switcher__input" >
+                                <label class="tabs-switcher__label" for="week6">F</label>
+                            </li>
+                            <li class="tabs-switcher__item">
+                                <input type="checkbox" id="week7" class="tabs-switcher__input" >
+                                <label class="tabs-switcher__label" for="week7">S</label>
+                            </li>
+                        </ul>
+                        <div class="week__icon tabs-switcher">
+                            <div class="tabs-switcher__item">
+                                <input type="checkbox" id="week-icon" class="tabs-switcher__input" >
+                                <label class="tabs-switcher__label" for="week-icon">
+                                    <i class="fa fa-moon-o"></i>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="spacing-top clear">
+                    <button class="button left button--rounded button--default">Cancel</button>
+                    <button class="button right button--rounded button--action">Apply filters</button>
                 </div>
             </form>
         </div>
