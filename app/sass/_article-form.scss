@@ -1,0 +1,35 @@
+.article-form {
+   /* background-color: $color-grey;*/
+
+    &__row {
+        width: 40%;
+
+    }
+
+    &__item {
+        position: relative;
+        width: 100%;
+
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+
+    &__box {
+        position: absolute;
+        background: $color-dark-opacity;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 10px ;
+
+        p {
+            color: $color-white;
+            font-size: 12px;
+            margin: 0;
+            line-height: 1.4;
+        }
+    }
+
+}
