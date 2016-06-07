@@ -1,68 +1,44 @@
 .page-container {
     margin: 40px 100px 0 140px;
 
-    .content-wrapper {
+    &__wrapper {
         position: relative;
         background-color: #fff;
         padding: $base-spacing-unit;
         border: $border;
+    }
+}
 
-        .bookmarks {
-            position: absolute;
-            width: 100px;
-            right: 100%;
-            top: 66px;
-            border: $border;
+.bookmarks {
+    position: absolute;
+    width: 100px;
+    right: 100%;
+    top: 66px;
+    border: $border;
 
-            &__list {
-                @include list-clear();
-            }
+    &__list {
+        @include list-clear();
+    }
 
-            &__item {
-                font-size: 14px;
-                background-color: $color-grey-light;
-                border-bottom: 1px solid $color-grey;
+    &__item {
+        font-size: 14px;
+        background-color: $color-grey-light;
+        border-bottom: 1px solid $color-grey;
 
-                &:last-child {
-                    border-bottom: none;
-                }
-            }
-
-            &__link {
-                display: block;
-                color: #000;
-                text-decoration: none;
-                padding: 6px 16px;
-
-                &:hover {
-                    background-color: #fff;
-                    color: $color-grey;
-                }
-            }
+        &:last-child {
+            border-bottom: none;
         }
+    }
 
-        &__btn {
-            margin-left: 60px;
+    &__link {
+        display: block;
+        color: $color-dark;
+        text-decoration: none;
+        padding: 6px 16px;
 
-        }
-
-        &__table {
-            border: $border;
-            width: 100%;
-
-            tbody {
-                background-color: $color-grey;
-                text-align: left;
-
-                tr {
-                    background-color: $color-white;
-
-                    th {
-                        padding-left: $large-spacing-unit;
-                    }
-                }
-
-            }
+        &:hover {
+            background-color: $color-white;
+            color: $color-grey;
         }
     }
 }
