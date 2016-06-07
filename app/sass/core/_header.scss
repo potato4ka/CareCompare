@@ -2,6 +2,10 @@
     border-bottom: $border;
     padding: $base-spacing-unit;
 
+    @include until($bp-large) {
+        
+    }
+
     &__logo {
         height: $logo-height;
 
