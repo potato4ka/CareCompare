@@ -48,10 +48,19 @@
 
         &__table {
             border: $border;
+            width: 100%;
 
-            &__table-row {
-                width: 100%;
+            tbody {
                 background-color: $color-grey;
+                text-align: left;
+
+                tr {
+                    background-color: $color-white;
+
+                    th {
+                        padding-left: $large-spacing-unit;
+                    }
+                }
 
             }
         }
