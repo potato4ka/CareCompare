@@ -1,3 +1,59 @@
 .page-container {
-    margin-top: 40px;
+    margin: 40px 100px 0 140px;
+
+    .content-wrapper {
+        position: relative;
+        background-color: #fff;
+        padding: $base-spacing-unit;
+        border: $border;
+
+        .bookmarks {
+            position: absolute;
+            width: 100px;
+            right: 100%;
+            top: 66px;
+            border: $border;
+
+            &__list {
+                @include list-clear();
+            }
+
+            &__item {
+                font-size: 14px;
+                background-color: $color-grey-light;
+                border-bottom: 1px solid $color-grey;
+
+                &:last-child {
+                    border-bottom: none;
+                }
+            }
+
+            &__link {
+                display: block;
+                color: #000;
+                text-decoration: none;
+                padding: 6px 16px;
+
+                &:hover {
+                    background-color: #fff;
+                    color: $color-grey;
+                }
+            }
+        }
+
+        &__btn {
+            margin-left: 60px;
+
+        }
+
+        &__table {
+            border: $border;
+
+            &__table-row {
+                width: 100%;
+                background-color: $color-grey;
+
+            }
+        }
+    }
 }
