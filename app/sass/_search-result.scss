@@ -93,3 +93,13 @@
     padding: $base-spacing-unit;
     border: $border;
 }
+
+.row-text-input {
+    input {
+        display: inline-block;
+        vertical-align: middle;
+        width: 40px;
+        margin: 0 5px;
+        text-align: center;
+    }
+}
