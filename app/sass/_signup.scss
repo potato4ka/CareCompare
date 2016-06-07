@@ -21,8 +21,21 @@
             padding: 6px;
         }
 
+
         button {
             width: 30%;
         }
+    }
+    &__textarea {
+        width: 80%;
+        max-width: 80%;
+        min-width: 80%;
+        height: 90px;
+
+    }
+    &__textarea-midle {
+        height: 160px;
+        max-width: 80%;
+        min-width: 80%;
     }
 }
