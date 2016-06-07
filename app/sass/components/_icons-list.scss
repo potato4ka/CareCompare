@@ -1,0 +1,9 @@
+.icons-list {
+    @include list-clear();
+    font-size: 28px;
+    text-align: center;
+
+    li {
+        display: inline-block;
+    }
+}

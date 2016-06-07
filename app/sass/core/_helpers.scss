@@ -19,6 +19,10 @@
     float: left;
 }
 
+.center {
+    text-align: center;
+}
+
 .title {
     font-size: 20px;
     margin: 0;
@@ -38,9 +42,7 @@
 .spacing-bottom {
     margin-bottom: $base-spacing-unit;
 }
-.center {
-    text-align: center;
-}
+
 .grey {
     background-color: $color-grey;
 }
