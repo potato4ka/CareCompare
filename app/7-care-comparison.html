@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Care Compare</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,100,700' rel='stylesheet' type='text/css'>
+    <link type="text/css" rel="stylesheet" href="../css/font-awesome.css"/>
+    <link type="text/css" rel="stylesheet" href="../css/main.css"/>
+</head>
+<body>
+<header class="header clear">
+    <ul class="header__nav">
+        <li class="header__nav-item"><a href="#" class="header__nav-link active">Parents</a></li>
+        <li class="header__nav-item"><a href="#" class="header__nav-link">Care Providers</a></li>
+    </ul>
+    <div class="clear header__wrapper">
+        <div class="header__logo">
+            <a href="#"><img src="img/logo.gif" alt="Care Compare"></a>
+        </div>
+        <div class="header__tools">
+            <ul class="header__social">
+                <li class="header__social-item"><a href="#" class="header__social-link"><i class="fa fa-facebook"></i></a></li>
+                <li class="header__social-item"><a href="#" class="header__social-link"><i class="fa fa-twitter"></i></a></li>
+                <li class="header__social-item"><a href="#" class="header__social-link"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+            <div class="header__buttons">
+                <form action="#">
+                    <button class="header__button button button--rounded button--action">Sign Up</button>
+                    <button class="header__button button button--rounded button--default"><i class="fa fa-lock"></i> Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="headline clear">
+    <div class="headline__search">
+        <form action="#">
+            <div class="search">
+                <span class="search__icon"><i class="fa fa-map-marker"></i></span>
+                <input type="search" placeholder="Postcode or Area" class="search__input" />
+                <button class="search__button"><i class="fa fa-search"></i></button>
+            </div>
+        </form>
+    </div>
+    <nav class="main-nav">
+        <ul class="main-nav__list">
+            <li class="main-nav__item"><a href="#" class="main-nav__link">Find Childcare</a></li>
+            <li class="main-nav__item"><a href="#" class="main-nav__link">News</a></li>
+            <li class="main-nav__item"><a href="#" class="main-nav__link">Articles</a></li>
+        </ul>
+    </nav>
+</div>
+<div class="container">
+    <div class="map-box">
+        <div id="map"></div>
+        <script>
+          function initMap() {
+            var mapDiv = document.getElementById('map');
+            var map = new google.maps.Map(mapDiv, {
+              center: {lat: 44.540, lng: -78.546},
+              zoom: 8
+            });
+          }
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+            async defer></script>
+        <div class="map-check">
+            <form action="#">
+                <input type="checkbox" id="map-check" />
+                <label for="map-check">Search When I Move The Map</label>
+            </form>
+        </div>
+    </div>
+    <aside class="sidebar">
+        <a href="#" class="sidebar__button button button--action button--stretch">View Comparison</a>
+        <div class="sidebar__holder">
+            <div class="search-result__text">
+                <h2>Your search for Craches in Citywest returned 3 results</h2>
+                <p>The average cost for child care in Citywest is $30 euro per day</p>
+            </div>
+            <button class="button button--stretch button--brand">Refine Results</button>
+            <form action="#">
+                <div class="search-result__item">
+                    <div class="clear grid">
+                        <div class="grid__column">
+                            <img src="img/avatar.jpg" alt="" class="search-result__avatar"/>
+                            <a href="#" class="search-result__button button button--action">View Profile</a>
+                        </div>
+                        <div class="grid__column">
+                            <p>Compare Provider</p>
+                            <p>Name-Address</p>
+                            <p>(xx)xxx-xxx</p>
+                        </div>
+                    </div>
+                    <div class="search-result__tools">
+                        <div class="search-result__check-row">
+                            <label for="search-result1">Compare</label>
+                            <input type="checkbox" id="search-result1"/>
+                        </div>
+                        <ul class="search-result__tools-list">
+                            <li><a href="#"><i class="fa fa-eur"></i></a></li>
+                            <li><a href="#"><i class="fa fa-envelope-o"></i></a></li>
+                            <li><a href="#"><i class="fa fa-map-marker"></i></a></li>
+                            <li><a href="#"><i class="fa fa-share-square-o"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="search-result__item">
+                    <div class="clear grid">
+                        <div class="grid__column">
+                            <img src="img/avatar.jpg" alt="" class="search-result__avatar"/>
+                            <a href="#" class="search-result__button button button--action">View Profile</a>
+                        </div>
+                        <div class="grid__column">
+                            <p>Compare Provider</p>
+                            <p>Name-Address</p>
+                            <p>(xx)xxx-xxx</p>
+                        </div>
+                    </div>
+                    <div class="search-result__tools">
+                        <div class="search-result__check-row">
+                            <label for="search-result2">Compare</label>
+                            <input type="checkbox" id="search-result2"/>
+                        </div>
+                        <ul class="search-result__tools-list">
+                            <li><a href="#"><i class="fa fa-eur"></i></a></li>
+                            <li><a href="#"><i class="fa fa-envelope-o"></i></a></li>
+                            <li><a href="#"><i class="fa fa-map-marker"></i></a></li>
+                            <li><a href="#"><i class="fa fa-share-square-o"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="search-result__item">
+                    <div class="clear grid">
+                        <div class="grid__column">
+                            <img src="img/avatar.jpg" alt="" class="search-result__avatar"/>
+                            <a href="#" class="search-result__button button button--action">View Profile</a>
+                        </div>
+                        <div class="grid__column">
+                            <p>Compare Provider</p>
+                            <p>Name-Address</p>
+                            <p>(xx)xxx-xxx</p>
+                        </div>
+                    </div>
+                    <div class="search-result__tools">
+                        <div class="search-result__check-row">
+                            <label for="search-result3">Compare</label>
+                            <input type="checkbox" id="search-result3"/>
+                        </div>
+                        <ul class="search-result__tools-list">
+                            <li><a href="#"><i class="fa fa-eur"></i></a></li>
+                            <li><a href="#"><i class="fa fa-envelope-o"></i></a></li>
+                            <li><a href="#"><i class="fa fa-map-marker"></i></a></li>
+                            <li><a href="#"><i class="fa fa-share-square-o"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="search-result__item">
+                    <div class="clear grid">
+                        <div class="grid__column">
+                            <img src="img/avatar.jpg" alt="" class="search-result__avatar"/>
+                            <a href="#" class="search-result__button button button--action">View Profile</a>
+                        </div>
+                        <div class="grid__column">
+                            <p>Compare Provider</p>
+                            <p>Name-Address</p>
+                            <p>(xx)xxx-xxx</p>
+                        </div>
+                    </div>
+                    <div class="search-result__tools">
+                        <div class="search-result__check-row">
+                            <label for="search-result4">Compare</label>
+                            <input type="checkbox" id="search-result4"/>
+                        </div>
+                        <ul class="search-result__tools-list">
+                            <li><a href="#"><i class="fa fa-eur"></i></a></li>
+                            <li><a href="#"><i class="fa fa-envelope-o"></i></a></li>
+                            <li><a href="#"><i class="fa fa-map-marker"></i></a></li>
+                            <li><a href="#"><i class="fa fa-share-square-o"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="search-result__item">
+                    <div class="clear grid">
+                        <div class="grid__column">
+                            <img src="img/avatar.jpg" alt="" class="search-result__avatar"/>
+                            <a href="#" class="search-result__button button button--action">View Profile</a>
+                        </div>
+                        <div class="grid__column">
+                            <p>Compare Provider</p>
+                            <p>Name-Address</p>
+                            <p>(xx)xxx-xxx</p>
+                        </div>
+                    </div>
+                    <div class="search-result__tools">
+                        <div class="search-result__check-row">
+                            <label for="search-result5">Compare</label>
+                            <input type="checkbox" id="search-result5"/>
+                        </div>
+                        <ul class="search-result__tools-list">
+                            <li><a href="#"><i class="fa fa-eur"></i></a></li>
+                            <li><a href="#"><i class="fa fa-envelope-o"></i></a></li>
+                            <li><a href="#"><i class="fa fa-map-marker"></i></a></li>
+                            <li><a href="#"><i class="fa fa-share-square-o"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </aside>
+</div>
+<footer class="footer clear">
+    <ul class="footer__nav">
+        <li class="footer__nav-item">
+            <a href="#" class="footer__link">About us</a>
+        </li>
+        <li class="footer__nav-item">
+            <a href="#" class="footer__link">Contact us</a>
+        </li>
+        <li class="footer__nav-item">
+            <a href="#" class="footer__link">FAQs</a>
+        </li>
+        <li class="footer__nav-item">
+            <a href="#" class="footer__link">Safety Centre</a>
+        </li>
+    </ul>
+    <p class="footer__copyright">&copy; <a href="#">website.com</a> Ltd. - All rights Reserved</p>
+</footer>
+<div class="modal-box">
+    <div class="modal-box__holder">
+        <a href="#" class="modal-box__close"><i class="fa fa-times"></i></a>
+        <div class="modal-box__title">
+            <span class="modal-box__heading">Quick View Profile</span>
+        </div>
+        <div class="modal-box__content">
+            <div class="grid">
+                <div class="grid__column">
+                    <div class="user-info">
+                        <div class="user-info__avatar">
+                            <a href="#">
+                                <img src="img/avatar.jpg" alt="" class="user-info__img">
+                            </a>
+                        </div>
+                        <div class="user-info__text-col">
+                            <h3 class="user-info__title">Name</h3>
+                            <ul class="user-info__tools">
+                                <li class="user-info__tools-item">Location</li>
+                                <li class="user-info__tools-item">Age</li>
+                            </ul>
+                            <p class="user-info__text">Updated: 11 May 2016</p>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at nibh nec ligula porttitor condimentum nec dictum ligula. Mauris aliquet id orci ac blandit.</p>
+                    <p>Sed ullamcorper congue urna eu fermentum. Nunc lobortis gravida sem, vel vestibulum nulla vehicula sit amet.</p>
+                    <p>Nam sagittis leo vehicula eleifend egestas. Aenean et nulla in arcu eleifend hendrerit sit amet in justo.</p>
+                    <p>Nulla tincidunt ex non nunc tristique, ut molestie nunc placerat.</p>
+                </div>
+                <div class="grid__column">
+                    <ul class="icons-list">
+                        <li><a href="#"><i class="fa fa-birthday-cake"></i></a></li>
+                        <li><a href="#"><i class="fa fa-file-text-o"></i></a></li>
+                        <li><a href="#"><i class="fa fa-car"></i></a></li>
+                        <li><a href="#"><i class="fa fa-graduation-cap"></i></a></li>
+                        <li><a href="#"><i class="fa fa-medkit"></i></a></li>
+                        <li><a href="#"><i class="fa fa-female"></i></a></li>
+                        <li><a href="#"><i class="fa fa-user-plus"></i></a></li>
+                    </ul>
+                    <h3 class="center">Provides Care for Ages</h3>
+                    <div class="spacing-bottom">
+                        <ul class="tabs-list">
+                            <li><a href="#">2-3 years</a></li>
+                            <li><a href="#">3-5 years</a></li>
+                            <li><a href="#">5+ years</a></li>
+                        </ul>
+                    </div>
+                    <table class="table table--small table--check">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Day</th>
+                                <th>After School</th>
+                                <th>Evening</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Mon</td>
+                                <td><i class="fa fa-check"></i></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Tue</td>
+                                <td></td>
+                                <td></td>
+                                <td><i class="fa fa-check"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Wed</td>
+                                <td></td>
+                                <td><i class="fa fa-check"></i></td>
+                                <td><i class="fa fa-check"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Thu</td>
+                                <td><i class="fa fa-check"></i></td>
+                                <td></td>
+                                <td><i class="fa fa-check"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Fri</td>
+                                <td></td>
+                                <td><i class="fa fa-check"></i></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Sat</td>
+                                <td><i class="fa fa-check"></i></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Sun</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Pay per day</td>
+                                <td>$25</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <form action="#">
+                <div class="center">
+                    <button class="button button--rounded button--action">View Profile</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
