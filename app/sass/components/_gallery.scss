@@ -1,4 +1,6 @@
 .gallery {
+    position: relative;
+
     &__list {
         @include list-clear();
     }
@@ -41,5 +43,29 @@
         .active & {
             background: $color-brand-violet;
         }
+    }
+
+    &__prev,
+    &__next {
+        font-size: 60px;
+        color: $color-brand-green;
+        position: absolute;
+        top: 50%;
+        line-height: 80px;
+        margin-top: -62px;
+        width: 30px;
+        text-align: center;
+
+        &:hover {
+            color: darken( $color-brand-green, 10% );
+        }
+    }
+
+    &__prev {
+        left: -40px;
+    }
+
+    &__next {
+        right: -40px;
     }
 }

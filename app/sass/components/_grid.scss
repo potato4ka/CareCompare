@@ -1,4 +1,5 @@
 .grid {
+    $root: &;
     display: flex;
     align-items: flex-start;
 
@@ -6,9 +7,43 @@
         align-items: center;
     }
 
+    &--bottom {
+        align-items: flex-end;
+    }
+
+    &--small-h {
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+
     &__column {
         flex: 1;
         padding: $base-spacing-unit;
+
+        #{$root}--no-h & {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        #{$root}--no-v & {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        #{$root}--no & {
+            padding: 0;
+        }
+
+        #{$root}--small-h & {
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+    }
+
+    &__row {
+        button {
+            width: 49%;
+        }
     }
 
     &__img {

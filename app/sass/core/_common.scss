@@ -43,6 +43,8 @@ select,
 textarea {
     vertical-align: middle;
     font: 100% $font, sans-serif;
+    line-height: $button-height - 6;
+    padding: 2px 10px;
     border: 1px solid $color-grey;
 
     &:focus {
