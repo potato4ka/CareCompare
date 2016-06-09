@@ -40,27 +40,39 @@
                 </ul>
             </div>
             <div class="signup">
-                <h3 class="title spacing-bottom signup__title">Add Article</h3>
-                <h4>Add Photo</h4>
+                <h3 class="title spacing-bottom signup__title">Edit Article</h3>
                 <form action="#">
-                        <div class="grid grid--bottom grid--small-h">
-                            <div class="grid__column">
-                                <div class="signup__row">
-                                    <label class="spacing-bottom">Title</label>
-                                    <input type="text" placeholder="">
-                                </div>
-                            </div>
-                            <div class="grid__column">
-                                <div class="grid grid--no grid--small-h">
-                                    <div class="grid__column">
-                                        <button class=" button button--action button--stretch">Browse</button>
-                                    </div>
-                                    <div class="grid__column">
-                                        <button class=" button button--action button--stretch">Upload</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <h4>Preview Photo</h4>
+                    <div class="gallery">
+                        <ul class="gallery__list">
+                            <li class="gallery__item active">
+                                <a href="#" class="gallery__content">
+                                    <img src="img/img01.jpeg" alt="img" class="gallery__img" />
+                                </a>
+                            </li>
+                            <li class="gallery__item">
+                                <a href="#" class="gallery__content">
+                                    <img src="img/img02.jpeg" alt="img" class="gallery__img" />
+                                </a>
+                            </li>
+                            <li class="gallery__item">
+                                <a href="#" class="gallery__content">
+                                    <img src="img/img03.jpeg" alt="img" class="gallery__img"/>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="gallery__dots">
+                            <li class="gallery__dot active"><a href="#" class="gallery__dot-link">1</a></li>
+                            <li class="gallery__dot"><a href="#" class="gallery__dot-link">2</a></li>
+                            <li class="gallery__dot"><a href="#" class="gallery__dot-link">3</a></li>
+                        </ul>
+                        <a href="#" class="gallery__prev"><i class="fa fa-angle-left"></i></a>
+                        <a href="#" class="gallery__next"><i class="fa fa-angle-right"></i></a>
+                    </div>
+                    <div class="grid__column">
+                        <button class=" button button--action">Browse</button>
+                        <button class=" button button--action">Upload</button>
+                    </div>
                     <div class="signup__row">
                         <label class="spacing-bottom">Title</label>
                         <input type="text" placeholder="">
