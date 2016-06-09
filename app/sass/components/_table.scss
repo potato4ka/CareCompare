@@ -3,6 +3,12 @@
     width: 100%;
     border-collapse: collapse;
 
+    caption {
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
     th {
         padding: 4px 30px;
         background-color: $color-brand-violet;
