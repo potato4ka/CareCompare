@@ -49,4 +49,20 @@
             }
         }
     }
+
+    &--faq {
+        table-layout: fixed;
+
+        th:first-child {
+            width: 85%;
+        }
+
+        th:nth-child(2) {
+            width: 15%;
+        }
+
+        td:nth-child(2){
+            text-align: center;
+        }
+    }
 }
