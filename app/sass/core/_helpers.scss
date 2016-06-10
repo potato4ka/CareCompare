@@ -29,6 +29,14 @@
     text-align: center;
     text-transform: uppercase;
     color: $color-brand-green;
+
+    &--middle {
+        text-align: center;
+        font-size: 16px;
+        font-weight: 600;
+        margin: 0;
+
+    }
 }
 
 .spacing {
@@ -48,7 +56,4 @@
 }
 .border-bottom {
     border-bottom: $border;
-}
-.full {
-    padding: 15px 0;
 }

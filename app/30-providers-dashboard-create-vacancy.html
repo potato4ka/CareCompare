@@ -81,38 +81,168 @@
                 </ul>
             </div>
             <form action="#">
+                <div class="section-content-block spacing center">
+                    <h3 class="title spacing-bottom">Vacancy type</h3>
+                    <div class="section-content-block__col">
+                        <label for="au-pair">Au Pair</label>
+                        <input type="checkbox" id="au-pair">
+                    </div>
+                    <div class="section-content-block__col">
+                        <label for="babysitter">Babysitter</label>
+                        <input type="checkbox" id="babysitter">
+                    </div>
+                    <div class="section-content-block__col">
+                        <label for="emergency-carer">Emergency Carer</label>
+                        <input type="checkbox" id="emergency-carer">
+                    </div>
+                    <div class="section-content-block__col">
+                        <label for="in-home">In Home Carer</label>
+                        <input type="checkbox" id="in-home">
+                    </div>
+                    <div class="section-content-block__col">
+                        <label for="nanny">Nanny</label>
+                        <input type="checkbox" id="nanny">
+                    </div>
+                </div>
+                <h3 class="title--middle">Contact Details</h3>
                 <div class="section-content-block spacing">
-                    <h3 class="title">Vacancy type</h3>
-                    <div class="grid">
+                    <div class="grid center">
                         <div class="grid__column">
-                            <label for="au-pair">Au Pair</label>
-                            <input type="checkbox" id="au-pair">
+                            <div class="signup__row">
+                               <label>First name</label>
+                               <input type="text" placeholder="">
+                            </div>
+                            <div class="signup__row">
+                                <label>Surname</label>
+                                <input type="text" placeholder="">
+                            </div>
                         </div>
                         <div class="grid__column">
-                            <label for="babysitter">Babysitter</label>
-                            <input type="checkbox" id="babysitter">
+                            <div class="signup__row">
+                                <label>Email</label>
+                                <input type="email" placeholder="">
+                            </div>
+                            <div class="signup__row">
+                                <label>Phone nomber</label>
+                                <input type="text" placeholder="(**)*** *** **">
+                            </div>
                         </div>
                         <div class="grid__column">
-                            <label for="emergency-carer">Emergency Carer</label>
-                            <input type="checkbox" id="emergency-carer">
-                        </div>
-                        <div class="grid__column">
-                            <label for="in-home">In Home Carer</label>
-                            <input type="checkbox" id="in-home">
-                        </div>
-                        <div class="grid__column">
-                            <label for="nanny">Nanny</label>
-                            <input type="checkbox" id="nanny">
+                            <h4>Contact preference</h4>
+                            <div class="section-content-block__col">
+                                <label>
+                                    <input type="radio" name="status" value="telephone">Telephone
+                                </label>
+                                <label>
+                                    <input type="radio" name="status" value="email">Email
+                                </label>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="section-content-block spacing">
-                    <h3 class="secttion-contect-block__title center">Contact Details</h3>
-                    <div class="grid">
+                <div class="section-content-block">
+                    <div class="grid center">
                         <div class="grid__column">
-
+                            <div class="signup__row">
+                                <label>Address</label>
+                                <input type="text" placeholder="">
+                            </div>
+                            <div class="signup__row">
+                                <label>City</label>
+                                <input type="text" placeholder="">
+                            </div>
+                        </div>
+                        <div class="grid__column">
+                            <div class="signup__row">
+                                <label>Province</label>
+                                <select class="visual__select">
+                                    <option>Other</option>
+                                    <option>Other</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                            <div class="signup__row">
+                                <div class="visual__row search">
+                                    <!--<span class="search__icon"><i class="fa fa-map-marker"></i></span>-->
+                                    <input type="search" placeholder="Postcode or Area" class="search__input" />
+                                    <button class="search__button"><i class="fa fa-search"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="title--middle">Education and Experience</h3>
+                <div class="section-content-block">
+                    <div class="grid center">
+                        <div class="grid__column">
+                            <div class="signup__row">
+                                <label>Years experience *</label>
+                                <select class="visual__select">
+                                    <option>No experience</option>
+                                    <option>One year</option>
+                                    <option>Two years</option>
+                                </select>
+                            </div>
+                            <div class="signup__row">
+                                <label>Education Details</label>
+                                <textarea class="signup__textarea-middle"></textarea>
+                            </div>
+                            <div class="signup__row">
+                                <label>Employment history</label>
+                                <textarea class="signup__textarea-middle"></textarea>
+                            </div>
+                        </div>
+                        <div class="grid__column">
+                            <div class="signup__row">
+                                <label>Additional languages</label>
+                                <select class="visual__select">
+                                    <option>English</option>
+                                    <option>German</option>
+                                    <option>Spanish</option>
+                                </select>
+                            </div>
+                            <div class="signup__row">
+                                <label>Other Courses</label>
+                                <textarea class="signup__textarea-middle"></textarea>
+                            </div>
+                            <div class="signup__row">
+                                <label>Interests</label>
+                                <textarea class="signup__textarea-middle"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-content-block">
+                    <div class="grid center">
+                        <div class="grid__column">
+                            <div class="signup__row">
+                                <label>Number of Children</label>
+                                <select class="visual__select">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>More</option>
+                                </select>
+                                <div class="section-content-block__text">
+                                    <p>Number of children the care is wiling to care for.</p>
+                                </div>
+                            </div>
                         </div>
                         <div class="grid__column"></div>
+                    </div>
+                </div>
+                <div class="section-content-block">
+                    <div class="grid">
+                        <div class="grid__column">
+                            <p>Please specify the minimum/maximum age of a child that the Carer is experienced willing to care for:</p>
+                        </div>
+                        <div class="grid__column">
+                            <label>Minimum Age:</label>
+                            <select class="visual__select">
+                                <option>Any</option>
+                                <option>2</option>
+                                <option>More</option>
+                            </select>
+                        </div>
                         <div class="grid__column"></div>
                     </div>
                 </div>

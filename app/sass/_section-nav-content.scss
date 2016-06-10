@@ -17,36 +17,32 @@
 
         &.active a {
             background-color: $color-white;
-            color: $color-grey;
         }
     }
 
     &__link {
         display: block;
-        padding: 3px 15px;
+        padding: 4px 15px;
         text-decoration: none;
         color: #000;
 
         &:hover {
             background-color: $color-white;
-            color: $color-grey;
         }
     }
 }
 .section-content-block {
 
-    &__title {
-        margin: 0;
-    }
+    &__col {
+        display: inline-block;
+        margin: 0 $base-spacing-unit;
 
-    .grid {
-
-        &__column {
-            padding: $base-spacing-unit 0;
-            text-align: center;
-
+        label{
+            margin: 10px 12px;
         }
     }
-
+    &__text {
+        text-align: left;
+    }
 
 }

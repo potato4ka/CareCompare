@@ -32,7 +32,7 @@
 
         &.active a {
             background-color: $color-white;
-            color: $color-grey;
+           /* color: $color-grey;*/
         }
     }
 
@@ -44,7 +44,7 @@
 
         &:hover {
             background-color: $color-white;
-            color: $color-grey;
+            /*color: $color-grey;*/
         }
     }
 }
