@@ -2,12 +2,18 @@
     border-bottom: $border;
     padding: $base-spacing-unit;
 
-    @include until($bp-large) {
-        
+    @include until($bp-medium) {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 0;
     }
 
     &__logo {
         height: $logo-height;
+
+        @include until($bp-medium) {
+            height: $logo-height*0.75;
+        }
 
         img {
             display: block;
@@ -20,6 +26,11 @@
         justify-content: space-between;
         align-items: center;
         text-align: center;
+
+        @include until($bp-medium) {
+            order: 1;
+            padding-bottom: $base-spacing-unit;
+        }
     }
 
     &__tools {
@@ -80,6 +91,12 @@
         font-family: $font-heading;
         text-align: center;
         margin-bottom: -$logo-height;
+
+        @include until($bp-medium) {
+            order: 2;
+            margin: 0;
+            border-top: $border;
+        }
     }
 
     &__nav-item {
