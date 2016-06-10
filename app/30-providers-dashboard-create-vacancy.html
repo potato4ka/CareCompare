@@ -181,7 +181,7 @@
                     <div class="grid__column">
                         <div class="search">
                             <input type="search" placeholder="Postcode or Area" class="search__input" />
-                            <button class="search__button"><i class="fa fa-search"></i></button>
+                            <button class="search__button"><i class="fa fa-times"></i></button>
                         </div>
                     </div>
                 </div>
@@ -236,8 +236,6 @@
                         </div>
                     </div>
                 </div>
-                <!--
-                </div>-->
                 <div class="grid">
                     <div class="grid__column">
                         <div class="form">
@@ -293,7 +291,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="grid grid--small-v">
+                <div class="grid">
                     <div class="grid__column">
                         <p>Please select the maximum number of children within each group the carer is willing to care for:</p>
                     </div>
@@ -335,26 +333,32 @@
                     </div>
                 </div>
                 <h3 class="title--middle spacing">Eit Availability</h3>
-                <!--
-                <div class="section-content-block">
-                    <div class="grid">
-
-                        <div class="grid__column">
-                            <label>Minimum Age:</label>
-                            <select class="visual__select">
-                                <option>Any</option>
-                                <option>2</option>
-                                <option>More</option>
-                            </select>
-                            <label>maximum Age:</label>
-                            <select class="visual__select">
-                                <option>Any</option>
-                                <option>2</option>
-                                <option>More</option>
-                            </select>
+                <div class="grid">
+                    <div class="grid__column">
+                        <h3 class="title--middle spacing-bottom">Availability</h3>
+                        <div class="form-row">
+                            <input type="checkbox" id="availability">
+                            <label for="availability">This Carer is available for online booking</label>
+                        </div>
+                        <div class="form-row">
+                            <input type="checkbox" id="availability1">
+                            <label for="availability1">This Carer is temporarily unavailable</label>
+                        </div>
+                        <div class="form-row">
+                            <input type="checkbox" id="availability2">
+                            <label for="availability2">This Carer is temporarily unavailable for online bookings</label>
                         </div>
                     </div>
-                </div>-->
+                    <div class="grid__column">
+                        <h3 class="title--middle spacing-bottom">Unavailable</h3>
+                        <div class="form">
+                            <textarea></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="form center">
+                    <button class=" button button--action">Continue</button>
+                </div>
             </form>
         </div>
     </div>
