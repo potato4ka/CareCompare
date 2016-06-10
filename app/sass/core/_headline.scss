@@ -3,8 +3,16 @@
     background: $color-grey-light;
     border-bottom: $border;
 
+    @include until($bp-medium) {
+        position: relative;
+    }
+
     &__search {
         float: right;
+
+        @include until($bp-medium) {
+            float: left;
+        }
     }
 }
 
@@ -14,8 +22,24 @@
     font-size: 18px;
     line-height: $button-height;
 
+    @include until($bp-medium) {
+        float: right;
+    }
+
     &__list {
         @include list-clear();
+
+        @include until($bp-medium) {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: $button-height + $base-spacing-unit*2;
+            background: $color-grey-light;
+            border-bottom: $border;
+            line-height: 1.2;
+            z-index: 10;
+            display: none;
+        }
     }
 
     &__item {
@@ -25,6 +49,12 @@
         &:first-child {
             padding-left: 0;
         }
+
+        @include until($bp-medium) {
+            display: block;
+            padding-left: 0;
+            border-top: $border;
+        }
     }
 
     &__link {
@@ -33,6 +63,33 @@
 
         &:hover {
             color: $color-brand-violet;
+        }
+
+        @include until($bp-medium) {
+            display: block;
+            padding: $base-spacing-unit;
+        }
+    }
+
+    &__hamburger {
+        display: none;
+
+        @include until($bp-medium) {
+            display: block;
+            border: $border;
+            padding: 6px;
+            width: $button-height;
+        }
+
+        span {
+            display: block;
+            height: 3px;
+            background: $color-grey;
+            margin-top: 6px;
+
+            &:first-child {
+                margin-top: 0;
+            }
         }
     }
 }
