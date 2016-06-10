@@ -42,6 +42,11 @@
             padding-left: 5px;
             padding-right: 5px;
         }
+
+        #{$root}--small-v & {
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
     }
 
     &__row {

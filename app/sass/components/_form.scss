@@ -1,0 +1,19 @@
+.form {
+    label {
+        display: block;
+        text-align: center;
+        margin-bottom: 6px;
+    }
+
+    input {
+        width: 100%;
+    }
+}
+.form-row {
+
+    label {
+        display: inline-block;
+        text-align: center;
+        margin-bottom: 6px;
+    }
+}
