@@ -1,0 +1,34 @@
+.section-nav-content {
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -30px;
+
+    &__list {
+        @include list-clear();
+    }
+
+    &__item {
+        display: inline-block;
+        border: $border;
+
+        &.active a {
+            background-color: $color-white;
+            color: $color-grey;
+        }
+    }
+
+    &__link {
+        display: block;
+        color: #000;
+        padding: 0 15px;
+        text-decoration: none;
+        background-color: $color-grey;
+
+        &:hover {
+            background-color: $color-white;
+            color: $color-grey;
+        }
+    }
+}
