@@ -9,6 +9,10 @@
 .box-container {
     margin: 0 auto;
     width: 80%;
+
+    @include until($bp-medium) {
+        width: 95%;
+    }
 }
 
 .right {
