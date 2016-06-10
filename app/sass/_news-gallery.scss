@@ -39,6 +39,10 @@
         width: 1000px;
         border: $border;
         border-top: none;
+
+        @include until($bp-medium) {
+            max-width: 100%;
+        }
     }
 
     &__item {

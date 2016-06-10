@@ -4,6 +4,10 @@
     margin: 0 auto;
     padding: 20px 0;
 
+    @include until($bp-medium) {
+        max-width: 100%;
+    }
+
     &__list {
         @include list-clear();
     }

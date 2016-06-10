@@ -2,10 +2,19 @@
     $root: &;
     position: relative;
     border-bottom: $border;
+    overflow: hidden;
 
     &__img {
         display: block;
         max-width: 100%;
+
+        @include until($bp-medium) {
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            bottom: 0;
+            max-width: none;
+        }
     }
 
     &__box {
@@ -27,6 +36,13 @@
             right: 25%;
             width: auto;
          }
+
+         @include until($bp-medium) {
+            position: relative;
+            z-index: 2;
+            width: auto;
+            left: 0;
+        }
     }
 
     &__icon {

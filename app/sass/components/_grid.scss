@@ -3,6 +3,10 @@
     display: flex;
     align-items: flex-start;
 
+    @include until($bp-medium) {
+        display: block;
+    }
+
     &--middle {
         align-items: center;
     }
