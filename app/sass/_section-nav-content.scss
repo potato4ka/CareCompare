@@ -1,4 +1,4 @@
-.section-nav-content {
+.tabs-nav {
 
     position: absolute;
     left: 0;
@@ -31,18 +31,16 @@
         }
     }
 }
-.section-content-block {
+.checkbox-list {
+    @include list-clear();
+    margin-bottom: $large-spacing-unit;
 
-    &__col {
+    &__item {
         display: inline-block;
-        margin: 0 $base-spacing-unit;
+        margin: 0 $large-spacing-unit;
 
-        label{
-            margin: 10px 12px;
+        input {
+            margin: -2px 8px 0 0;
         }
     }
-    &__text {
-        text-align: left;
-    }
-
 }
