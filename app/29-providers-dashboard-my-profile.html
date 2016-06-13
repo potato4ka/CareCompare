@@ -57,10 +57,10 @@
         <div class="page-container__wrapper spacing-bottom">
             <div class="tabs-nav">
                 <ul class="tabs-nav__list center">
-                    <li class="tabs-nav__item">
+                    <li class="tabs-nav__item active">
                         <a class="tabs-nav__link" href="#">My Profile</a>
                     </li>
-                    <li class="tabs-nav__item active">
+                    <li class="tabs-nav__item">
                         <a class="tabs-nav__link" href="#">Create Vacancy</a>
                     </li>
                     <li class="tabs-nav__item">
@@ -85,32 +85,111 @@
                 <div class="profile">
                     <div class="profile__avatar">
                         <a href="#">
-                            <img src="img/avatar.jpg" alt="user-photo"/>
+                            <img class="profile__photo" src="img/avatar.jpg" alt="user-photo"/>
                         </a>
                         <div class="form center spacing">
-                            <button class=" button button--action">Edit</button>
-                            <button class=" button button--action">Delete</button>
+                            <button class=" button button--rounded button--action">Edit</button>
+                            <button class=" button button--rounded button--action">Delete</button>
                         </div>
                     </div>
-                    <div class="user-info__text-col">
-                        <ul>
-                            <li>
-                                <p>Name Surname</p>
+                    <div class="profile__text-col">
+                        <ul class="profile__list">
+                            <li class="spacing-bottom">
+                                <span class="profile__bg"><i class="fa fa-user profile__ico"></i></span><p>Name Surname</p>
                             </li>
-                            <li>
-                                <p>Address, City, Province, Postcode</p>
+                            <li class="spacing-bottom">
+                                <span class="profile__bg"><i class="fa fa-map-marker profile__ico"></i></span><p>Address, City, Province, Postcode</p>
                             </li>
-                            <li>
-                                <p>(**)*** ** **</p>
+                            <li class="spacing-bottom">
+                                <span class="profile__bg"><i class="fa fa-phone profile__ico"></i></span><p>(**)*** ** **</p>
                             </li>
-                            <li>
-                                <a href="#">anyname@mail.com</a>
+                            <li class="spacing-bottom">
+                                <span class="profile__bg"><i class="fa fa-envelope-o profile__ico"></i></span><a href="#">anyname@mail.com</a>
                             </li>
                         </ul>
                         <div class="form center spacing">
-                            <button class=" button button--action">Update Profile</button>
+                            <button class=" button button--rounded button--action">Update Profile</button>
                         </div>
                     </div>
+                </div>
+                <h4 class="title--middle">Description</h4>
+                <div class="profile__text">
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                </div>
+                <h4 class="title--middle spacing-bottom">Availability & Rates</h4>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>S</th>
+                            <th>M</th>
+                            <th>T</th>
+                            <th>W</th>
+                            <th>T</th>
+                            <th>F</th>
+                            <th>S</th>
+                            <th>Pay/h</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Day 7am-6pm</td>
+                            <td></td>
+                            <td></td>
+                            <td><i class="fa fa-check"></i></td>
+                            <td><i class="fa fa-check"></i></td>
+                            <td><i class="fa fa-check"></i></td>
+                            <td><i class="fa fa-check"></i></td>
+                            <td></td>
+                            <td>$00</td>
+                        </tr>
+                        <tr>
+                            <td>After School 3pm-7pm</td>
+                            <td></td>
+                            <td></td>
+                            <td><i class="fa fa-check"></i></td>
+                            <td></td>
+                            <td><i class="fa fa-check"></i></td>
+                            <td><i class="fa fa-check"></i></td>
+                            <td><i class="fa fa-check"></i></td>
+                            <td>$00</td>
+                        </tr>
+                        <tr>
+                            <td>Evening From 6pm</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><i class="fa fa-check"></i></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>$00</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h4 class="title--middle spacing">Provides care for ages</h4>
+                <div class="spacing-bottom">
+                    <ul class="tabs-list">
+                        <li><a href="#">2-3 years</a></li>
+                        <li><a href="#">3-5 years</a></li>
+                        <li><a href="#">5+ years</a></li>
+                    </ul>
+                </div>
+                <h4 class="title--middle spacing-bottom">Credential</h4>
+                <ul class="icons-list">
+                    <li><a href="#"><i class="fa fa-birthday-cake"></i></a></li>
+                    <li><a href="#"><i class="fa fa-file-text-o"></i></a></li>
+                    <li><a href="#"><i class="fa fa-car"></i></a></li>
+                    <li><a href="#"><i class="fa fa-graduation-cap"></i></a></li>
+                    <li><a href="#"><i class="fa fa-medkit"></i></a></li>
+                    <li><a href="#"><i class="fa fa-female"></i></a></li>
+                    <li><a href="#"><i class="fa fa-user-plus"></i></a></li>
+                </ul>
+                <div class="center spacing">
+                    <button class="button button--rounded button--action">View Profile</button>
                 </div>
             </form>
         </div>

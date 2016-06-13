@@ -1,5 +1,5 @@
 .profile {
-    width: 800px;
+    width: $modal-width;
     margin: 0 auto;
 
     &:after {
@@ -10,7 +10,64 @@
 
     &__avatar {
         float: left;
-        width: 200px;
+        width: 300px;
         padding-right: $large-spacing-unit;
+    }
+
+    &__photo {
+        display: block;
+        width: 100%;
+    }
+
+    &__text {
+        padding: 0 $large-spacing-unit;
+
+        &:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+    }
+
+    &__text-title {
+        display: inline-block;
+        float: left;
+    }
+    &__text-info {
+        text-align: right;
+    }
+
+    &__text-col {
+        overflow: hidden;
+
+        p {
+            display: inline-block;
+        }
+    }
+
+    &__list {
+        @include list-clear();
+        margin-left: $button-height;
+
+        p {
+            margin: 0;
+        }
+    }
+
+    &__bg {
+        display: inline-block;
+        margin-right: $base-spacing-unit;
+
+    }
+    &__ico {
+
+        width: 24px;
+        height: 24px;
+        line-height: 24px;
+        border-radius: 50%;
+        color: #fff;
+        background-color: $color-brand-violet;
+        text-align: center;
     }
 }
