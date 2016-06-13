@@ -1,0 +1,16 @@
+.profile {
+    width: 800px;
+    margin: 0 auto;
+
+    &:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    &__avatar {
+        float: left;
+        width: 200px;
+        padding-right: $large-spacing-unit;
+    }
+}
