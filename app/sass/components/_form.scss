@@ -17,3 +17,15 @@
         margin-bottom: 6px;
     }
 }
+
+.form-block {
+
+    input {
+        width: 90%;
+    }
+
+    button {
+        margin-left:$base-spacing-unit;
+    }
+
+}

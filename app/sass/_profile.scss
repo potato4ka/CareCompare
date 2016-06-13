@@ -30,13 +30,6 @@
 
     }
 
-    &__text-title {
-        display: inline-block;
-        float: left;
-    }
-    &__text-info {
-        text-align: right;
-    }
 
     &__text-col {
         overflow: hidden;
@@ -69,5 +62,38 @@
         color: #fff;
         background-color: $color-brand-violet;
         text-align: center;
+    }
+
+    &__block {
+        position: relative;
+    }
+    &__ico-user {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: -10%;
+
+
+    }
+
+    &__avatar-img {
+        width: 46px;
+        height: 46px;
+        line-height: 46px;
+        background-color: $color-brand-violet;
+        border-radius: 50%;
+        color: #fff;
+        text-align: center;
+    }
+
+    &__block-info {
+        float: right;
+
+    }
+
+    &__block-title {
+        display: inline-block;
+        overflow: hidden;
+        margin: 0;
     }
 }
