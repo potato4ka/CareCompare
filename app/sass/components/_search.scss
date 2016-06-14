@@ -18,9 +18,14 @@
         line-height: $button-height - 6;
         padding: 2px 5px;
         flex: 1;
+        width: 200px;
 
         &:focus {
             border-color: $color-brand-green;
+        }
+
+        @include until($bp-small) {
+            width: 150px;
         }
 
         .visual & {
