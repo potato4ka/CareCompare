@@ -68,5 +68,10 @@
 
     &__content {
         padding: $base-spacing-unit;
+        @extend .clear;
+    }
+
+    &__content-naked {
+        @extend .clear;
     }
 }
