@@ -28,8 +28,19 @@
 
 .form-block {
 
+    &__input {
+        position: relative;
+    }
+
+    &__ico {
+        position: relative;
+        top: 0;
+        border: 0;
+        right: 26px;
+    }
+
     input {
-        width: 90%;
+        width: 85%;
     }
 
     button {
