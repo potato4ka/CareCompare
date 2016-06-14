@@ -45,6 +45,11 @@
         </form>
     </div>
     <nav class="main-nav">
+        <a href="#" class="main-nav__hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
         <ul class="main-nav__list">
             <li class="main-nav__item"><a href="#" class="main-nav__link">Find Childcare</a></li>
             <li class="main-nav__item"><a href="#" class="main-nav__link">News</a></li>
@@ -63,54 +68,52 @@
                     <input type="search" placeholder="Postcode or Area" class="search__input" />
                     <button class="search__button"><i class="fa fa-search"></i></button>
                 </div>
-                <div class="visual__row">
-                    <div class="grid">
-                        <div class="grid__column">
-                            <select class="visual__select">
-                                <option>Care type</option>
-                                <option>One type</option>
-                                <option>Other type</option>
-                            </select>
-                        </div>
-                        <div class="grid__column">
-                            <div class="week">
-                                <ul class="tabs-switcher week__list">
-                                    <li class="tabs-switcher__item">
-                                        <input type="checkbox" id="week1" class="tabs-switcher__input" >
-                                        <label class="tabs-switcher__label" for="week1">S</label>
-                                    </li>
-                                    <li class="tabs-switcher__item">
-                                        <input type="checkbox" id="week2" class="tabs-switcher__input" >
-                                        <label class="tabs-switcher__label" for="week2">M</label>
-                                    </li>
-                                    <li class="tabs-switcher__item">
-                                        <input type="checkbox" id="week3" class="tabs-switcher__input" >
-                                        <label class="tabs-switcher__label" for="week3">T</label>
-                                    </li>
-                                    <li class="tabs-switcher__item">
-                                        <input type="checkbox" id="week4" class="tabs-switcher__input" >
-                                        <label class="tabs-switcher__label" for="week4">W</label>
-                                    </li>
-                                    <li class="tabs-switcher__item">
-                                        <input type="checkbox" id="week5" class="tabs-switcher__input" >
-                                        <label class="tabs-switcher__label" for="week5">T</label>
-                                    </li>
-                                    <li class="tabs-switcher__item">
-                                        <input type="checkbox" id="week6" class="tabs-switcher__input" >
-                                        <label class="tabs-switcher__label" for="week6">F</label>
-                                    </li>
-                                    <li class="tabs-switcher__item">
-                                        <input type="checkbox" id="week7" class="tabs-switcher__input" >
-                                        <label class="tabs-switcher__label" for="week7">S</label>
-                                    </li>
-                                </ul>
-                                <div class="week__icon tabs-switcher">
-                                    <div class="tabs-switcher__item">
-                                        <input type="checkbox" id="week-icon" class="tabs-switcher__input" >
-                                        <label class="tabs-switcher__label" for="week-icon">
-                                            <i class="fa fa-moon-o"></i>
-                                        </label>
-                                    </div>
+                <div class="visual__row grid">
+                    <div class="grid__column">
+                        <select class="visual__select">
+                            <option>Care type</option>
+                            <option>One type</option>
+                            <option>Other type</option>
+                        </select>
+                    </div>
+                    <div class="grid__column">
+                        <div class="week">
+                            <ul class="tabs-switcher week__list">
+                                <li class="tabs-switcher__item">
+                                    <input type="checkbox" id="week1" class="tabs-switcher__input" >
+                                    <label class="tabs-switcher__label" for="week1">S</label>
+                                </li>
+                                <li class="tabs-switcher__item">
+                                    <input type="checkbox" id="week2" class="tabs-switcher__input" >
+                                    <label class="tabs-switcher__label" for="week2">M</label>
+                                </li>
+                                <li class="tabs-switcher__item">
+                                    <input type="checkbox" id="week3" class="tabs-switcher__input" >
+                                    <label class="tabs-switcher__label" for="week3">T</label>
+                                </li>
+                                <li class="tabs-switcher__item">
+                                    <input type="checkbox" id="week4" class="tabs-switcher__input" >
+                                    <label class="tabs-switcher__label" for="week4">W</label>
+                                </li>
+                                <li class="tabs-switcher__item">
+                                    <input type="checkbox" id="week5" class="tabs-switcher__input" >
+                                    <label class="tabs-switcher__label" for="week5">T</label>
+                                </li>
+                                <li class="tabs-switcher__item">
+                                    <input type="checkbox" id="week6" class="tabs-switcher__input" >
+                                    <label class="tabs-switcher__label" for="week6">F</label>
+                                </li>
+                                <li class="tabs-switcher__item">
+                                    <input type="checkbox" id="week7" class="tabs-switcher__input" >
+                                    <label class="tabs-switcher__label" for="week7">S</label>
+                                </li>
+                            </ul>
+                            <div class="week__icon tabs-switcher">
+                                <div class="tabs-switcher__item">
+                                    <input type="checkbox" id="week-icon" class="tabs-switcher__input" >
+                                    <label class="tabs-switcher__label" for="week-icon">
+                                        <i class="fa fa-moon-o"></i>
+                                    </label>
                                 </div>
                             </div>
                         </div>

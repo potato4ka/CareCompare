@@ -2,7 +2,7 @@
     border-bottom: $border;
     padding: $base-spacing-unit;
 
-    @include until($bp-medium) {
+    @include until($bp-large) {
         display: flex;
         flex-direction: column;
         padding-bottom: 0;
@@ -11,7 +11,7 @@
     &__logo {
         height: $logo-height;
 
-        @include until($bp-medium) {
+        @include until($bp-small) {
             height: $logo-height*0.75;
         }
 
@@ -27,7 +27,7 @@
         align-items: center;
         text-align: center;
 
-        @include until($bp-medium) {
+        @include until($bp-large) {
             order: 1;
             padding-bottom: $base-spacing-unit;
         }
@@ -38,11 +38,21 @@
         align-items: center;
         justify-content: flex-end;
         flex: 1;
+
+        @include until($bp-medium) {
+            flex-direction: column;
+            align-items: flex-end;
+        }
     }
 
     &__social {
         @include list-clear();
         font-size: 18px;
+
+        @include until($bp-medium) {
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
     }
 
     &__social-item {
@@ -68,6 +78,12 @@
             color: $color-white;
             background: darken( $color-brand-violet, 10% );
         }
+
+        @include until($bp-medium) {
+            width: $button-height*0.75;
+            height: $button-height*0.75;
+            line-height: $button-height*0.75;
+        }
     }
 
     &__buttons {
@@ -80,6 +96,16 @@
 
         &:first-child {
             margin-left: 0;
+
+            @include until($bp-large) {
+                display: block;
+                margin: 0;
+            }
+        }
+
+        @include until($bp-large) {
+            display: block;
+            margin: 4px 0 0;
         }
     }
 
@@ -92,7 +118,7 @@
         text-align: center;
         margin-bottom: -$logo-height;
 
-        @include until($bp-medium) {
+        @include until($bp-large) {
             order: 2;
             margin: 0;
             border-top: $border;
