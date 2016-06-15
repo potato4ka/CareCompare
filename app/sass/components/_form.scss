@@ -48,3 +48,14 @@
     }
 
 }
+.form-line {
+    @include list-clear();
+
+    &__item {
+        padding-bottom: 10px;
+    }
+
+    input {
+        margin-right: 6px;
+    }
+}
