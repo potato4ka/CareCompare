@@ -49,6 +49,18 @@
         }
     }
 
+    &__column-large {
+        flex-grow: 3;
+    }
+
+    &__column-middle {
+        flex-grow: 2;
+    }
+
+    &__column-small {
+        flex-grow: 1;
+    }
+
     &__row {
         button {
             width: 49%;
