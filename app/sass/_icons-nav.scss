@@ -4,32 +4,52 @@
     padding: $base-spacing-unit;
     background: $color-grey-light;
     text-align: center;
+    @extend .clear;
 
-    @include until($bp-medium) {
-        text-align: left;
+    @include until($bp-large) {
+        position: relative;
     }
 
     &__list {
         @include list-clear();
         display: flex;
+        flex-wrap: wrap;
 
-        @include until($bp-medium) {
-            flex-direction: column;
+        @include until($bp-large) {
+            display: none;
+            position: absolute;
+            left: 0;
+            right: 0;
+            background: $color-grey-light;
+            border-top: $border;
+            top: 100%;
+            z-index: 3;
+        }
+
+        &.active {
+            @include until($bp-large) {
+                display: block;
+            }
         }
     }
 
     &__item {
         flex: 1;
         padding: 0 $base-spacing-unit;
+
+        @include until($bp-large) {
+            display: block;
+            border-bottom: $border;
+        }
     }
 
     &__link {
         color: $color-dark;
         text-decoration: none;
 
-        @include until($bp-medium) {
-            display: flex;
-            align-items: center;
+        @include until($bp-large) {
+            display: block;
+            padding: $base-spacing-unit;
         }
     }
 
@@ -41,15 +61,34 @@
         display: block;
         margin: 0 auto 10px;
 
-        @include until($bp-medium) {
-            margin: 0 10px 0 0;
-            text-align: center;
+        @include until($bp-large) {
+            display: none;
         }
     }
 
     &__text {
-        @include until($bp-medium) {
-            flex: 1;
+        display: block;
+    }
+
+    &__hamburger {
+        display: none;
+        width: 35px;
+        padding: 5px;
+        float: right;
+
+        @include until($bp-large) {
+            display: block;
+        }
+
+        span {
+            display: block;
+            height: 3px;
+            background: $color-dark;
+            margin-top: 5px;
+
+            &:first-child {
+                margin-top: 0;
+            }
         }
     }
 }

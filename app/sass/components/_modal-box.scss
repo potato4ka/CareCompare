@@ -8,6 +8,11 @@
     right: 0;
     display: flex;
 
+    @include until($bp-medium) {
+        position: absolute;
+    }
+
+
     &:after {
         content:'';
         background: $color-dark-opacity;
@@ -25,8 +30,16 @@
         position: relative;
         z-index: 5;
 
+        @include until($bp-medium) {
+            width: 100%;
+        }
+
         #{$root}--small & {
             width: $modal-width-small;
+
+            @include until($bp-medium) {
+                width: 100%;
+            }
         }
     }
 

@@ -8,7 +8,7 @@
         display: block;
         max-width: 100%;
 
-        @include until($bp-medium) {
+        @include until($bp-large) {
             position: absolute;
             z-index: 1;
             top: 0;
@@ -35,9 +35,14 @@
             left: 25%;
             right: 25%;
             width: auto;
+
+            @include until($bp-large) {
+                width: auto;
+                left: 0;
+            }
          }
 
-         @include until($bp-medium) {
+         @include until($bp-large) {
             position: relative;
             z-index: 2;
             width: auto;
@@ -51,7 +56,7 @@
         text-align: center;
         margin-bottom: 40px;
 
-        i{
+        i {
             width: $icon-size;
             height: $icon-size;
             line-height: $icon-size;
@@ -67,8 +72,23 @@
         margin-top: 20px;
         background: $color-white;
 
+        &.grid {
+            background: none;
+        }
+
         .grid__column {
             padding: 0;
+            background: $color-white;
+
+            @include until($bp-medium) {
+                margin-top: 20px;
+            }
+
+            &:first-child {
+                @include until($bp-medium) {
+                    margin-top: 0;
+                }
+            }
         }
     }
 
@@ -84,37 +104,5 @@
         border: 1px solid $color-white;
         font-weight: bold;
         font-size: 18px;
-    }
-}
-
-.week {
-    display: flex;
-
-    &__list {
-        flex: 8;
-    }
-
-    &__icon-link {
-        $icon-size: 30px;
-        background: $color-grey;
-        display: inline-block;
-        width: $icon-size;
-        height: $icon-size;
-        border-radius: 50%;
-        line-height: $icon-size;
-        color: $color-white;
-
-        &:hover {
-            color: $color-white;
-            background: $color-brand-green;
-        }
-
-        .active & {
-            background: $color-brand-green;
-        }
-    }
-
-    &__icon {
-        flex: 2;
     }
 }

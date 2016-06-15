@@ -17,6 +17,11 @@
     border-right: $border;
     padding-bottom: $button-height;
 
+    @include until($bp-large) {
+        position: static;
+        width: auto;
+    }
+
     &__button {
         bottom: 0;
         left: 0;
@@ -26,6 +31,14 @@
     &__holder {
         overflow: auto;
         height: 100%;
+    }
+}
+
+.map-box {
+    @include until($bp-large) {
+        height: 600px;
+        overflow: hidden;
+        position: relative;
     }
 }
 
@@ -44,6 +57,10 @@
 
         &:first-child {
             border-top: none;
+        }
+
+        @include until($bp-large) {
+            font-size: 14px;
         }
     }
 
