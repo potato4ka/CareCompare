@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Care Compare</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,100,700' rel='stylesheet' type='text/css'>
+    <link type="text/css" rel="stylesheet" href="../css/font-awesome.css"/>
+    <link type="text/css" rel="stylesheet" href="../css/main.css"/>
+</head>
+<body>
+<header class="header clear">
+    <ul class="header__nav">
+        <li class="header__nav-item"><a href="#" class="header__nav-link active">Parents</a></li>
+        <li class="header__nav-item"><a href="#" class="header__nav-link">Care Providers</a></li>
+    </ul>
+    <div class="clear header__wrapper">
+        <div class="header__logo">
+            <a href="#"><img src="img/logo.gif" alt="Care Compare"></a>
+        </div>
+        <div class="header__tools">
+            <ul class="header__social">
+                <li class="header__social-item"><a href="#" class="header__social-link"><i class="fa fa-facebook"></i></a></li>
+                <li class="header__social-item"><a href="#" class="header__social-link"><i class="fa fa-twitter"></i></a></li>
+                <li class="header__social-item"><a href="#" class="header__social-link"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+            <div class="header__buttons">
+                <form action="#">
+                    <button class="header__button button button--rounded button--action">Sign Up</button>
+                    <button class="header__button button button--rounded button--default"><i class="fa fa-lock"></i> Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="headline clear">
+    <div class="headline__search">
+        <form action="#">
+            <div class="search">
+                <span class="search__icon"><i class="fa fa-map-marker"></i></span>
+                <input type="search" placeholder="Postcode or Area" class="search__input" />
+                <button class="search__button"><i class="fa fa-search"></i></button>
+            </div>
+        </form>
+    </div>
+    <nav class="main-nav">
+        <a href="#" class="main-nav__hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+        <ul class="main-nav__list">
+            <li class="main-nav__item"><a href="#" class="main-nav__link">Find Childcare</a></li>
+            <li class="main-nav__item"><a href="#" class="main-nav__link">News</a></li>
+            <li class="main-nav__item"><a href="#" class="main-nav__link">Articles</a></li>
+        </ul>
+    </nav>
+</div>
+<div class="container">
+    <form action="#">
+        <div class="page-container">
+            <div class="page-container__wrapper spacing-bottom">
+                <div class="profile center">
+                    <h3 class="title spacing-bottom">Child's deteils</h3>
+                    <h4 class="title--middle spacing-bottom">Which Children do You Want to Waitlist?</h4>
+                    <ul class="form-line">
+                        <li class="form-line__item">
+                            <input type="checkbox" id="form-line1"/>
+                            <span class="form-line__ico"><i class="fa fa-user profile__ico"></i></span>
+                            <label for="form-line1">Name Surname</label>
+                        </li>
+                       <!-- <li class="form-line__item">
+                            <input type="checkbox" id="form-line2"/>
+                            <span class="form-line__ico"><i class="fa fa-user profile__ico"></i></span>
+                            <label for="form-line2">Name Surname</label>
+                        </li>-->
+                    </ul>
+                    <div class="grid grid--small">
+                        <div class="grid__column">
+                            <div class="form">
+                                <label>Child's name*</label>
+                                <input type="text" placeholder="Name">
+                            </div>
+                        </div>
+                        <div class="grid__column">
+                            <div class="form">
+                                <label>Gender*</label>
+                                <select class="visual__select">
+                                    <option>Male</option>
+                                    <option>Female</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid grid--small">
+                        <div class="grid__column">
+                            <div class="form">
+                                <label>Data ppppp*</label>
+                                <input type="text" placeholder="">
+                            </div>
+                        </div>
+                        <div class="grid__column">
+                            <div class="form">
+                                <label>Country of birth</label>
+                                <select class="visual__select">
+                                    <option>Any Country</option>
+                                    <option>Country</option>
+                                    <option>Country</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile form">
+                        <label>Special Requirements</label>
+                        <textarea></textarea>
+                    </div>
+                    <div class="profile spacing">
+                        <ul class="form-line spacing-top">
+                            <li class="form-line__item">
+                                <input type="checkbox" id="form-line2"/>
+                                <span class="form-line__ico"><i class="fa fa-user profile__ico"></i></span>
+                                <label for="form-line2">Name Surname</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="form spacing-bottom">
+                        <button class=" button button--rounded button--action">+ Add an additional child</button>
+                    </div>
+                </div>
+                <h4 class="title--middle spacing">Family details</h4>
+                <div class="profile">
+                    <div class="grid grid--small">
+                        <div class="grid__column">
+                            <div class="form">
+                                <label>First Name</label>
+                                <input type="text" placeholder="">
+                            </div>
+                        </div>
+                        <div class="grid__column">
+                            <div class="form">
+                                <label>Email</label>
+                                <input type="email" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid grid--small">
+                        <div class="grid__column">
+                            <div class="form">
+                                <label>Surname</label>
+                                <input type="text" placeholder="">
+                            </div>
+                        </div>
+                        <div class="grid__column">
+                            <div class="form">
+                                <label>Phone</label>
+                                <input type="text" placeholder="(**)***-***-**">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid grid--small">
+                        <div class="grid__column">
+                            <div class="form">
+                                <label>Adress</label>
+                                <input type="text" placeholder="">
+                            </div>
+                        </div>
+                        <div class="grid__column">
+                            <div class="form">
+                                <label>Province</label>
+                                <select class="visual__select">
+                                    <option>Other</option>
+                                    <option>Other</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid grid--small">
+                        <div class="grid__column">
+                            <div class="form">
+                                <label>City</label>
+                                <input type="text" placeholder="">
+                            </div>
+                        </div>
+                        <div class="grid__column">
+                            <div class="form">
+                                <label>Postcode of area</label>
+                                <div class="search">
+                                    <input type="search" placeholder="" class="search__input" />
+                                    <button class="search__button"><i class="fa fa-times"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid grid--small">
+                        <div class="grid__column">
+                            <h4 class="title--small spacing-bottom">Contact preference</h4>
+                            <div class="grid">
+                                <div class="grid__column">
+                                    <div class="form-row">
+                                        <label>
+                                            <input type="radio" name="status" value="telephone">Telephone
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="grid__column">
+                                    <div class="form-row">
+                                        <label>
+                                            <input type="radio" name="status" value="email">Email
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid__column">
+                            <div class="form">
+                                <label>Relationship to child*</label>
+                                <select class="visual__select">
+                                    <option>Guardian</option>
+                                    <option>Other</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid grid--small">
+                        <div class="grid__column">
+                            <ul class="profile__list">
+                                <li>
+                                    <input type="checkbox" id="parent">
+                                    <label for="parent">Parent at home</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="seeking">
+                                    <label for="seeking">Seeking work</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="single">
+                                    <label for="single">Single Parent</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="maternity">
+                                    <label for="maternity">Maternity/Paternity leave</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="grid__column">
+                            <ul class="profile__list">
+                                <li>
+                                    <input type="checkbox" id="work">
+                                    <label for="work">Working</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="work1">
+                                    <label for="work1">Studying</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="work2">
+                                    <label for="work2">Disability</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="work3">
+                                    <label for="work3">Aboriginal/Torres Strait Islander</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h4 class="title--middle spacing">Child Waitlist Needs</h4>
+                    <div class="grid">
+                        <div class="grid__column">
+                            <div class="form">
+                                <label>Enrolment</label>
+                                <select class="visual__select">
+                                    <option>As soon as posible</option>
+                                    <option>Other</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="grid__column">
+                            <h4 class=" form__title title--small">Days Requir</h4>
+                            <div class="week">
+                                <ul class="tabs-switcher week__list">
+                                    <li class="tabs-switcher__item">
+                                        <input type="checkbox" id="week1" class="tabs-switcher__input" >
+                                        <label class="tabs-switcher__label" for="week1">S</label>
+                                    </li>
+                                    <li class="tabs-switcher__item">
+                                        <input type="checkbox" id="week2" class="tabs-switcher__input" >
+                                        <label class="tabs-switcher__label" for="week2">M</label>
+                                    </li>
+                                    <li class="tabs-switcher__item">
+                                        <input type="checkbox" id="week3" class="tabs-switcher__input" >
+                                        <label class="tabs-switcher__label" for="week3">T</label>
+                                    </li>
+                                    <li class="tabs-switcher__item">
+                                        <input type="checkbox" id="week4" class="tabs-switcher__input" >
+                                        <label class="tabs-switcher__label" for="week4">W</label>
+                                    </li>
+                                    <li class="tabs-switcher__item">
+                                        <input type="checkbox" id="week5" class="tabs-switcher__input" >
+                                        <label class="tabs-switcher__label" for="week5">T</label>
+                                    </li>
+                                    <li class="tabs-switcher__item">
+                                        <input type="checkbox" id="week6" class="tabs-switcher__input" >
+                                        <label class="tabs-switcher__label" for="week6">F</label>
+                                    </li>
+                                    <li class="tabs-switcher__item">
+                                        <input type="checkbox" id="week7" class="tabs-switcher__input" >
+                                        <label class="tabs-switcher__label" for="week7">S</label>
+                                    </li>
+                                </ul>
+                                <div class="week__icon tabs-switcher">
+                                    <div class="tabs-switcher__item">
+                                        <input type="checkbox" id="week-icon" class="tabs-switcher__input" >
+                                        <label class="tabs-switcher__label" for="week-icon">
+                                            <i class="fa fa-moon-o"></i>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile center spacing">
+                        <button class=" button button--rounded button--action">Waitlist</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<footer class="footer clear">
+    <ul class="footer__nav">
+        <li class="footer__nav-item">
+            <a href="#" class="footer__link">About us</a>
+        </li>
+        <li class="footer__nav-item">
+            <a href="#" class="footer__link">Contact us</a>
+        </li>
+        <li class="footer__nav-item">
+            <a href="#" class="footer__link">FAQs</a>
+        </li>
+        <li class="footer__nav-item">
+            <a href="#" class="footer__link">Safety Centre</a>
+        </li>
+    </ul>
+    <p class="footer__copyright">&copy; <a href="#">website.com</a> Ltd. - All rights Reserved</p>
+</footer>
+</body>
+</html>

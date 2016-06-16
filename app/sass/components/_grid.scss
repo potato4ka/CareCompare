@@ -24,6 +24,15 @@
         flex: 1;
         padding: $base-spacing-unit;
 
+/*
+** grid grid--no-h - grid with no horizontal paddings
+** grid grid--no-v - grid with no vertical paddings
+** grid grid--no - grid with no paddings
+** grid grid--small-h - grid with small horizontal paddings
+** grid grid--small-v - grid with small vertical paddings
+** grid grid--small - grid with small paddings
+** */
+
         #{$root}--no-h & {
             padding-left: 0;
             padding-right: 0;
@@ -47,6 +56,27 @@
             padding-top: 5px;
             padding-bottom: 5px;
         }
+
+        #{$root}--small & {
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+    }
+
+    &__column-large {
+        flex-grow: 3;
+    }
+
+    &__column-middle {
+        flex-grow: 2;
+    }
+
+    &__column-small {
+        flex-grow: 1;
+    }
+
+    &__column-auto {
+        flex-grow: 0;
     }
 
     &__row {
