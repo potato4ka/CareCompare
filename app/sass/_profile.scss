@@ -73,8 +73,9 @@
         margin-right: $base-spacing-unit;
 
     }
-    &__ico {
-
+    &__ico,
+    &__ico-link {
+        display: block;
         width: 24px;
         height: 24px;
         line-height: 24px;
@@ -82,7 +83,15 @@
         color: #fff;
         background-color: $color-brand-violet;
         text-align: center;
+        text-decoration: none;
+
     }
+
+    &__ico-link:hover {
+        background-color: $color-brand-green;
+    }
+
+
 
     &__block {
         position: relative;
