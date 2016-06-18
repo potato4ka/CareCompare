@@ -1,0 +1,11 @@
+.dashboard {
+
+    &__list {
+        @include list-clear();
+    }
+
+    &__item {
+        display: inline-block;
+        margin-right: 2px;
+    }
+}
