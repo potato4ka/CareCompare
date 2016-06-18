@@ -1,11 +1,19 @@
 .page-container {
     margin: 40px 100px 0 140px;
 
+    @include until($bp-large) {
+        margin: 0;
+    }
+
     &__wrapper {
         position: relative;
         background-color: #fff;
         padding: $base-spacing-unit;
         border: $border;
+
+        @include until($bp-large) {
+            border: none;
+        }
     }
 }
 
@@ -15,6 +23,14 @@
     right: 100%;
     top: 66px;
     border: $border;
+    @extend .clear;
+
+    @include until($bp-large) {
+        position: static;
+        width: auto;
+        border: none;
+        padding-bottom: 10px;
+    }
 
     &__list {
         @include list-clear();
@@ -24,15 +40,25 @@
     &__item {
         font-size: 14px;
         background-color: $color-grey-light;
-        border-bottom: 1px solid $color-grey;
+        border-bottom: $border;
+
+        @include until($bp-large) {
+            float: left;
+            border: $border;
+            border-right: none;
+        }
 
         &:last-child {
             border-bottom: none;
+
+            @include until($bp-large) {
+                border-bottom: $border;
+                border-right: $border;
+            }
         }
 
         &.active a {
             background-color: $color-white;
-           /* color: $color-grey;*/
         }
     }
 

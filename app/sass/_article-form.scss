@@ -3,6 +3,9 @@
     &__row {
         width: 40%;
 
+        @include until($bp-large) {
+            width: 100%;
+        }
     }
 
     &__item {

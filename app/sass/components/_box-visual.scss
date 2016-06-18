@@ -15,6 +15,12 @@
         left: $large-spacing-unit;
         right: $large-spacing-unit;
         background: $color-dark-opacity;
+
+        @include until($bp-large) {
+            position: static;
+            background: none;
+            padding-top: 10px;
+        }
     }
 
     &__title {
@@ -23,5 +29,10 @@
         font-weight: bold;
         font-family: $font-heading;
         font-size: 44px;
+
+        @include until($bp-large) {
+            color: $color-brand-green;
+            font-size: 28px;
+        }
     }
 }

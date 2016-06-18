@@ -20,6 +20,12 @@
         margin-right: -5px;
     }
 
+    &--mobile {
+        @include until($bp-medium) {
+            display: flex;
+        }
+    }
+
     &__column {
         flex: 1;
         padding: $base-spacing-unit;

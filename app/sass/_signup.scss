@@ -4,6 +4,10 @@
     text-align: center;
     padding: 20px;
 
+    @include until($bp-large) {
+        width: auto;
+    }
+
     &__title {
         border-bottom: $border;
     }
@@ -22,6 +26,10 @@
 
         button {
             width: 30%;
+
+            @include until($bp-large) {
+                width: 100%;
+            }
         }
     }
 
