@@ -63,9 +63,17 @@
 
     &__prev {
         left: -40px;
+
+        @include until($bp-large) {
+            left: -34px;
+        }
     }
 
     &__next {
         right: -40px;
+
+        @include until($bp-large) {
+            right: -34px;
+        }
     }
 }

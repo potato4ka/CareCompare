@@ -13,6 +13,10 @@
         border-right: 1px solid $color-dark;
         padding: 0 20px;
 
+        @include until($bp-large) {
+            padding: 0 6px;
+        }
+
         &:last-child {
             border-right: none;
         }
@@ -22,6 +26,10 @@
         font-size: 14px;
         text-decoration: none;
         color: $color-dark;
+
+        @include until($bp-large) {
+            font-size: 12px;
+        }
     }
 
     &__copyright {
