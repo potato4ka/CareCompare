@@ -50,13 +50,25 @@
     button {
         margin-left:$base-spacing-unit;
     }
-
 }
+
 .form-line {
     @include list-clear();
 
     &__item {
         padding-bottom: 10px;
+    }
+
+    &__ico {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        line-height: 24px;
+        border-radius: 50%;
+        color: #fff;
+        background-color: $color-brand-violet;
+        text-align: center;
+        text-decoration: none;
     }
 
     input {
