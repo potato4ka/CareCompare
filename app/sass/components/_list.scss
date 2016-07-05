@@ -25,3 +25,21 @@
         }
     }
 }
+
+.check-list {
+    @include list-clear();
+
+    &__item {
+        @extend .clear;
+        padding-top: 6px;
+    }
+
+    &__input {
+        float: left;
+        margin: 4px 6px 0 0;
+    }
+
+    &__label {
+        overflow: hidden;
+    }
+}
