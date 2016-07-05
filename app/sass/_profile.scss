@@ -1,4 +1,5 @@
 .profile {
+    $root: &;
     width: $modal-width;
     margin: 0 auto;
 
@@ -61,15 +62,19 @@
 
     &__list {
         @include list-clear();
-        margin-left: $button-height;
 
         p {
             margin: 0;
+            overflow: hidden;
         }
     }
 
+     #{$root}__list {
+        margin-left: $button-height;
+    }
+
     &__bg {
-        display: inline-block;
+        float: left;
         margin-right: $base-spacing-unit;
 
     }
