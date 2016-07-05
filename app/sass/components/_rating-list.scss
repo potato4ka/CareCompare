@@ -2,4 +2,27 @@
 
   @include list-clear();
 
+  &__item {
+    display: inline-block;
+
+  }
+
+  .full {
+    display: none;
+  }
+  .active .full {
+    display: block;
+  }
+  .active .empty {
+    display: none;
+  }
+
+  &__link {
+    text-decoration: none;
+
+    span {
+      display: block;
+    }
+  }
+
 }
