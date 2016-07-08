@@ -73,36 +73,74 @@
                     </div>
                     <h4 class="title--middle spacing">Provides care for ages</h4>
                     <div class="spacing-bottom">
-                        <ul class="age-list">
+                        <ul class="age-list center">
                             <li class="age-list__item">
-                                <input type="checkbox" id="parent" class="check-list__input">
-                                <label for="parent" class="check-list__label">Parent at home</label>
+                                <label for="months" class="check-list__label">0-12 months</label>
+                                <input type="checkbox" id="months" class="check-list__input">
                             </li>
                             <li class="age-list__item">
-                                <input type="checkbox" id="parent1" class="check-list__input">
-                                <label for="parent1" class="check-list__label">Parent at home</label>
+                                <label for="years" class="check-list__label">1-2 years</label>
+                                <input type="checkbox" id="years" class="check-list__input">
                             </li>
                             <li class="age-list__item">
-                                <input type="checkbox" id="parent2" class="check-list__input">
-                                <label for="parent2" class="check-list__label">Parent at home</label>
+                                <label for="years1" class="check-list__label">2-3 years</label>
+                                <input type="checkbox" id="years1" class="check-list__input">
                             </li>
                             <li class="age-list__item">
-                                <input type="checkbox" id="parent3" class="check-list__input">
-                                <label for="parent3" class="check-list__label">Parent at home</label>
+                                <label for="years2" class="check-list__label">3-5 years</label>
+                                <input type="checkbox" id="years2" class="check-list__input">
                             </li>
                             <li class="age-list__item">
-                                <input type="checkbox" id="parent4" class="check-list__input">
-                                <label for="parent4" class="check-list__label">Parent at home</label>
-                            </li>
-                            <li class="age-list__item">
-                                <input type="checkbox" id="parent5" class="check-list__input">
-                                <label for="parent5" class="check-list__label">Parent at home</label>
+                                <label for="years3" class="check-list__label">5+ years</label>
+                                <input type="checkbox" id="years3" class="check-list__input">
                             </li>
                         </ul>
+                        <div class="grid">
+                            <div class="grid__column">
+                                <ul class="check-list">
+                                    <li class="check-list__item">
+                                        <input type="checkbox" id="smoker" class="check-list__input">
+                                        <label for="smoker" class="check-list__label">Non smoker</label>
+                                    </li>
+                                    <li class="check-list__item">
+                                        <input type="checkbox" id="cleaning" class="check-list__input">
+                                        <label for="cleaning" class="check-list__label">House work Cleaning</label>
+                                    </li>
+                                    <li class="check-list__item">
+                                        <input type="checkbox" id="license" class="check-list__input">
+                                        <label for="license" class="check-list__label">Driver's License</label>
+                                    </li>
+                                    <li class="check-list__item">
+                                        <input type="checkbox" id="has-car" class="check-list__input">
+                                        <label for="has-car" class="check-list__label">Has Car</label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="grid__column">
+                                <ul class="check-list">
+                                    <li class="check-list__item">
+                                        <input type="checkbox" id="check" class="check-list__input">
+                                        <label for="check" class="check-list__label">WWCC and/or Police Check</label>
+                                    </li>
+                                    <li class="check-list__item">
+                                        <input type="checkbox" id="aid" class="check-list__input">
+                                        <label for="aid" class="check-list__label">First Aid</label>
+                                    </li>
+                                    <li class="check-list__item">
+                                        <input type="checkbox" id="parent" class="check-list__input">
+                                        <label for="parent" class="check-list__label">Parent References</label>
+                                    </li>
+                                    <li class="check-list__item">
+                                        <input type="checkbox" id="care" class="check-list__input">
+                                        <label for="care" class="check-list__label">Registered Care</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="grid__column">
-                    <div class="profile__avatar-ico">
+                    <div class="profile__avatar-profile">
                         <h4 class="title--middle spacing-bottom">Choose Photo</h4>
                         <a href="#">
                             <img class="profile__photo" src="img/avatar.jpg" alt="user-photo"/>
@@ -111,6 +149,107 @@
                             <button class=" button button--rounded button--action">Edit</button>
                             <button class=" button button--rounded button--action">Delete</button>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clear">
+                <div class="profile__col-block">
+                    <p>igi</p>
+                </div>
+                <div class="profile__col-block">
+                    <p>livgwg</p>
+                </div>
+            </div>
+            <!--<div class="grid">
+                <div class="grid__column">
+                    <h4 class="title--middle spacing-bottom">Opening Hours</h4>
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th></th>
+                            <th>S</th>
+                            <th>M</th>
+                            <th>T</th>
+                            <th>W</th>
+                            <th>T</th>
+                            <th>F</th>
+                            <th>S</th>
+                            <th>Pay/h</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Day 7am-6pm</td>
+                            <td></td>
+                            <td></td>
+                            <td><i class="fa fa-check"></i></td>
+                            <td><i class="fa fa-check"></i></td>
+                            <td><i class="fa fa-check"></i></td>
+                            <td><i class="fa fa-check"></i></td>
+                            <td></td>
+                            <td>$00</td>
+                        </tr>
+                        <tr>
+                            <td>After School 3pm-7pm</td>
+                            <td></td>
+                            <td></td>
+                            <td><i class="fa fa-check"></i></td>
+                            <td></td>
+                            <td><i class="fa fa-check"></i></td>
+                            <td><i class="fa fa-check"></i></td>
+                            <td><i class="fa fa-check"></i></td>
+                            <td>$00</td>
+                        </tr>
+                        <tr>
+                            <td>Evening From 6pm</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><i class="fa fa-check"></i></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>$00</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="grid__column">
+                    <div class="form">
+                        <label>How far are you willing to travel for work?</label>
+                        <select class="visual__select">
+                            <option>10km</option>
+                            <option>30km</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div class="form">
+                        <label>Qualifications</label>
+                        <input type="text" placeholder="">
+                    </div>
+                    <div class="form">
+                        <label>Responsibilities</label>
+                        <input type="text" placeholder="">
+                    </div>
+                    <div class="form">
+                        <label>Features</label>
+                        <input type="text" placeholder="">
+                    </div>
+                    <div class="form">
+                        <label>Skills activities</label>
+                        <input type="text" placeholder="">
+                    </div>
+                </div>
+            </div>-->
+            <div class="grid">
+                <div class="grid__column clear">
+                    <div class="form spacing right">
+                        <button class=" button button--rounded button--action">Previous</button>
+                    </div>
+                </div>
+                <div class="grid__column">
+                    <div class="form spacing">
+                        <button class=" button button--rounded button--action">Save</button>
                     </div>
                 </div>
             </div>

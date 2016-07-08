@@ -1,5 +1,22 @@
 .age-list {
   @include list-clear();
 
-  
+  &__item {
+    display: inline-block;
+    margin-right: $base-spacing-unit;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    input,
+    label {
+      display: block;
+
+    }
+
+    input {
+      margin: 6px 0 0 45%;
+    }
+  }
 }
